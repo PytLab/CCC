@@ -24,7 +24,7 @@
 
     $meeting = "Meeting";
     $contact = "Contact";
-    $lan = "CN";
+    $lan = "中文";
 
     /*右侧边栏*/
     $more_high = "More Highlights ->";
