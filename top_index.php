@@ -9,34 +9,6 @@
 	include_once("./get_language.php"); //识别浏览器语言 
 ?>
 <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
-
-<!--<script type=text/javascript>
-	function menuFix() 
-	{
-		var sfEls = document.getElementById("menu").getElementsByTagName("li");
-		for (var i=0; i<sfEls.length; i++) 
-		{
-    		sfEls[i].onmouseover=function() 
-			{
-    			this.className+=(this.className.length>0? " ": "") + "sfhover";
-   	 		}
-   			sfEls[i].onMouseDown=function() 
-			{
-    			this.className+=(this.className.length>0? " ": "") + "sfhover";
-    		}
-    		sfEls[i].onMouseUp=function() 
-			{
-    			this.className+=(this.className.length>0? " ": "") + "sfhover";
-    		}
-    		sfEls[i].onmouseout=function() 
-			{
-    			this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),"");
-    		}
-		}
-	}
-window.onload=menuFix;
-
-</script>-->
 <link href="./css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
