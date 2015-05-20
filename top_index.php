@@ -1,8 +1,14 @@
-<?php date_default_timezone_set(PRC);@session_start(); include_once("./conn/conn.php"); include_once("./function.php"); ?>
+<?php 
+    date_default_timezone_set(PRC);
+	@session_start(); 
+	include_once("./conn/conn.php"); 
+	include_once("./function.php");
+	include_once("./get_language.php"); //识别浏览器语言 
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html"; charset="<?php echo $charset?>" />
 
 <!--<script type=text/javascript>
 	function menuFix() 
@@ -48,34 +54,33 @@ window.onload=menuFix;
             <div id="head_bottom">
             	<div id="head_nav">
                 	<ul id="menu">
-                    	<li><a href="index.php" >Home</a>
+                    	<li><a href="index.php" ><?php echo $home?></a>
                         	<ul class="sub_menu">
                             	
                             </ul>
                         </li>
-                        <li><a href="people.php" >People</a>
+                        <li><a href="people.php" ><?php echo $people?></a>
                         	<ul class="sub_menu">
-                            	
-                                <li><a href="people.php#research_staff" >Research Staff</a></li>
-                                <li><a href="people.php#graduate" >Graduate Students</a></li>
-                                <li><a href="people.php#undergraduate" >Undergraduate Students</a></li>
+                                <li><a href="people.php#research_staff" ><?php echo $teachers?></a></li>
+                                <li><a href="people.php#graduate" ><?php echo $graduates?></a></li>
+                                <li><a href="people.php#undergraduate" ><?php echo $graduated?></a></li>
                             </ul>
                         </li>
                         
-                        <li><a href="news_list.php" >News</a>
+                        <li><a href="news_list.php" ><?php echo $news?></a>
                         	
                         </li>
-                        <li><a href="highlights_list.php" >Highlights</a>
+                        <li><a href="highlights_list.php" ><?php echo $highlights?></a>
                         	<ul class="sub_menu">
-                            	<li><a href="highlights_detail.php" >Latest</a></li>
-                                <li><a href="highlights_list.php" >Highlights List</a></li>
+                            	<li><a href="highlights_detail.php" ><?php echo $latest?></a></li>
+                                <li><a href="highlights_list.php" ><?php echo $high_list?></a></li>
                                 
                             </ul>
                         </li>
-                        <li><a href="publications_list.php" >Publications</a>
+                        <li><a href="publications_list.php" ><?php echo $pubs?></a>
                         	
                         </li>
-                        <li><a href="course_list.php" >Courses</a>
+                        <li><a href="course_list.php" ><?php echo $courses?></a>
                         	<ul class="sub_menu">
                             	<?php
                                 	$sql_acc=mysql_query("select * from tb_user where usernc = '".$_SESSION["unc"]."'");
@@ -83,8 +88,8 @@ window.onload=menuFix;
 									if($info_acc!="")
 									{
 								?>
-                                <li><a href="course_list.php" >Course List</a></li>
-                            	<li><a href="course_login.php?courseid=<?php echo $info_acc[courseid];?>" >Your Account</a></li>   
+                                <li><a href="course_list.php" ><?php echo $course_list?></a></li>
+                            	<li><a href="course_login.php?courseid=<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
                                 <?php
 									}
 									else
@@ -96,13 +101,13 @@ window.onload=menuFix;
 								?>
                             </ul>
                         </li>
-                        <li><a href="meeting.php" >Meeting</a>
+                        <li><a href="meeting.php" ><?php echo $meeting?></a>
                         	
                         </li>
-                        <li><a href="contact.php" >Contact</a>
+                        <li><a href="contact.php" ><?php echo $contact?></a>
                         </li>
                         <div id="language_change">
-                        	<a href="#">Chinese</a>
+                        	<a href="#"><?php echo $lan?></a>
                         </div>
                     </ul>
                     

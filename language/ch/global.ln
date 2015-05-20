@@ -1,0 +1,32 @@
+<?php
+    $title = "首页 - CCC";
+    $charset = "UTF-8";
+
+    /*首页菜单栏*/
+    $home = "首页";
+    $people = "研究人员";
+    /*in people*/
+    $teachers = "师资队伍";
+    $graduates = "研究生";
+    $graduated = "毕业学生";
+
+    $news = "中心新闻";
+    $highlights = "研究亮点";
+    /*in highlights*/
+    $latest = "最新亮点";
+    $high_list = "研究亮点";
+
+    $pubs = "发表论文";
+    $courses = "教学课程";
+    /*in courses*/
+    $course_list = "课程列表";
+    $course_acc = "课程账号";
+
+    $meeting = "主办会议";
+    $contact = "联系方式";
+    $lan = "EN";
+
+    /*右侧边栏*/
+    
+
+?>

@@ -187,64 +187,62 @@ select,input[type="button"],input[type="submit"] {
 <body>
 	<script language="javascript">
  		function chkinput(form){
-   			if(form.username.value==""){
-   
+   			if(form.username.value=="")
+			{
       			alert("请输入管理员姓名!");
       			form.username.focus();
       			return(false); 
    			}
-    		if(form.userpwd.value==""){
-   
+    		if(form.userpwd.value=="")
+            {
       			alert("请输入管理员密码!");
       			form.userpwd.focus();
       			return(false); 
    			}
 			if(form.xym.value=="")
 			{
-     		alert("请输入验证码！");
-	 		form.xym.select();
-	 		return(false);
+     		    alert("请输入验证码！");
+	 		    form.xym.select();
+	 		    return(false);
     		}
+			
    			return(true);
- 
  		}
 </script>
 	<div id="login_main">
     	<div id="login_top"></div>
         <div id="login_body">
-          <div id="login_input">
-        	<form name="form1" method="post" action="chkadmin.php" onSubmit="return chkinput(this)">
-            	<ul>
-            	<li>
-                	<span class="login_info">用户名：</span>
-                    <span class="login_input_info">
-                    	<input type="text" name="username" size="18" class="inputcss" />
-                    </span>
-                </li>
-                <li>
-                	<span class="login_info">密码：&nbsp;&nbsp;&nbsp;</span>
-                    <span class="login_input_info">
-                    	<input type="password" name="userpwd" size="18" class="inputcss" />
-                    </span>
-                </li>
-                <li>
-                	<span class="login_info">验证码：</span>
-                    <span class="login_input_info">
-                    	<input type="text" name="xym" size="10" class="inputcss" />
-                    </span>
-                    <span id="check_image">
-                    	<img src="xym1.php">
-                    </span>
-                </li>
-            	<li>
-            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="立即登录" class="login_submit"/>
-                    <input type="reset" name="reset" value="重填信息" class="login_reset"/>
-                </li>
-            </ul>
-        
-            </form>
-           
-          </div>
+            <div id="login_input">
+                <form name="form1" method="post" action="chkadmin.php" onSubmit="return chkinput(this)">
+                    <ul>
+                        <li>
+                            <span class="login_info">用户名：</span>
+                            <span class="login_input_info">
+                                <input type="text" name="username" size="18" class="inputcss" />
+                            </span>
+                        </li>
+                        <li>
+                            <span class="login_info">密码：&nbsp;&nbsp;&nbsp;</span>
+                            <span class="login_input_info">
+                                <input type="password" name="userpwd" size="18" class="inputcss" />
+                            </span>
+                        </li>
+                        <li>
+                            <span class="login_info">验证码：</span>
+                            <span class="login_input_info">
+                                <input type="text" name="xym" size="10" class="inputcss" />
+                            </span>
+                            <span id="check_image">
+                                <img src="xym1.php">
+                            </span>
+                        </li>
+                        <li>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value="立即登录" class="login_submit"/>
+                            <input type="reset" name="reset" value="重填信息" class="login_reset"/>
+                        </li>
+                    </ul>       
+                </form>
+             </div>
         </div>
     </div>
 </body>
