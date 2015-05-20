@@ -27,6 +27,17 @@
     $lan = "EN";
 
     /*右侧边栏*/
-    
+    $more_high = "更多亮点 ->";
+    $more_news = "更多新闻 ->";
+    $more_pub = "更多发表 ->";
+    $more_contact = "更多信息 ->";
 
+    /*新闻列表*/
+    $news_ttl = "中心新闻";
+    /*highlights列表*/
+    $high_ttl = "研究亮点";
+    /*文章发表列表*/
+    $pub_ttl = "发表论文";
+    /*课程列表*/
+    $course_ttl = "教学课程";
 ?>

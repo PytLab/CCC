@@ -121,7 +121,7 @@
 	}
 	#menu a{
 		display:block;
-		height:36px;
+		height:34px;
 		width:auto;
 		font:17px "Microsoft YaHei";
 		font-weight:300;
@@ -132,11 +132,11 @@
 		text-align:center;
 		display:block;
 		float:left;
-		height:36px;
+		height:34px;
 		width:auto;
 		list-style-type:none;
 		vertical-align:middle;
-		padding-top:8px;
+		padding-top:10px;
 		background-color:;
 		margin-left:2px;
 		padding-left:15px;
@@ -156,7 +156,7 @@
 		transition:  0.5s;	
 	}
 	#menu li ul{
-		line-height:38px;
+		line-height:40px;
 		list-style-type:none;
 		text-align:left;
 		width:auto;
@@ -173,7 +173,10 @@
 		float: none;
 		width:auto;
 		min-width:97px;
-		 filter: 		progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=75); -moz-opacity: 0.70; opacity: 0.7; -khtml-opacity: 0.75;
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=75); 
+		-moz-opacity: 0.70; 
+		opacity: 0.7; 
+		-khtml-opacity: 0.75;
 		padding-left:17px;/*opacity*/
 		/*list-style-type:none;
 		width:80px;

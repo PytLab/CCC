@@ -1,4 +1,10 @@
-<?php date_default_timezone_set(PRC);  include_once("./conn/conn.php"); include_once("./function.php"); ?>
+<?php 
+    date_default_timezone_set(PRC);
+	@session_start(); 
+	include_once("./conn/conn.php"); 
+	include_once("./function.php");
+	include_once("./get_language.php"); //识别浏览器语言 
+?>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
