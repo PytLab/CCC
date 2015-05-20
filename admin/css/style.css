@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+	/* nav */
+	body{
+		margin:0;
+		padding:0;
+		background-image:url(../graph/grey.jpg);
+		font:16px "Microsoft YaHei";
+		color:#000;
+	}
+	#main{
+		margin:0px;
+		padding:0;
+	}
+	#head{
+		margin:0;
+		padding:0;
+		width:100%;
+		background-color:#ffffff
+	}
+	#head_top{
+		width:1024px;
+		margin:0 auto;
+		background-image:url(../../graph/HomePage/logo3.gif);
+		background-repeat:no-repeat;
+		background-position:20px 15px;
+		height:80px;
+		margin-bottom:0px;
+		padding:0px;
+		
+	}
+	#head_bottom{
+		background-color:#000000;
+		height:44px;
+		width:100%;
+		background-repeat:repeat-x;
+		padding:0px;
+		margin-top:0px;
+		
+	}
+	#head_nav{
+		margin-left:251px;
+		height:40px;
+		margin-top:0px;
+	}
+	#menu{
+		line-height:40px;
+	}
+	#menu a{
+		display:block;
+		height:36px;
+		width:80px;
+		font:17px "Microsoft YaHei";
+		font-weight:600;
+		color:#FFF;
+		text-decoration:none;
+	}
+	#menu li{
+		text-align:center;
+		display:block;
+		float:left;
+		height:36px;
+		width:90px;
+		list-style-type:none;
+		vertical-align:middle;
+		padding-top:8px;
+		background-color:;
+		margin-left:2px;
+		padding-left:8px;
+	}
+	#menu a:link{
+		text-decoration:none;
+	}
+	#menu a:visited{
+		text-decoration:none;
+	}
+	#menu li:hover{
+		background-color:#333;
+	}
+	#menu li ul{
+		line-height:38px;
+		list-style-type:none;
+		text-align:left;
+		width:80px;
+		position:absolute;
+		margin:0;
+		padding:0;
+		left:-999em;
+	}
+	#menu li ul li{
+		background:#000000;
+		border-top: 1px solid #fff;
+		float: none;
+		width:100px;
+		 filter: 		progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=85); -moz-opacity: 0.80; opacity: 0.8; -khtml-opacity: 0.85;
+		padding-left:17px;
+	}
+	#menu li ul li a{
+		font-weight:normal;
+		font-weight:normal;
+		font-size:16px;
+	}
+	#menu li ul li:hover{
+		background:#666;
+	}
+	#menu li:hover ul{
+		position:absolute;
+		margin:0em;
+		margin-left:-1.2em;
+		padding:-18em;
+		left:auto;
+	}
+	.state_nav{
+		float:right;
+		margin-top:20px;
+		padding:0px;
+		color:#FFF;
+		font:14px "Microsoft YaHei";
+		font-weight:bold;
+		margin-right:20px;
+	}
+	.state_nav a{
+		color:#CCC;
+		text-decoration:none;
+	}
+	.state_nav a:hover{
+		color:#39F;
+	}
+	
+	
+	
+	
+	
+	#login_main{
+		width:1000px;
+		height:600px;
+		margin:0 auto;
+		margin-top:0px;
+		z-index:0;
+		padding-top:10px;
+		background-image:url(graph/login_main2.gif);
+	}
+	#login_top{
+		margin:0 auto;
+		margin-top:60px;
+		width:600px;
+		height:80px;
+		z-index:3;
+		background-image:url(graph/login_top.gif);
+		margin-bottom:0px;
+	}
+	#login_body{
+		margin:0 auto;
+		width:560px;
+		height:340px;
+		background-color:#e8e8e8;
+		margin-top:0px;
+		padding-top:30px;
+		
+		
+	}
+	#login_input{
+		width:350px;
+		margin:0 auto;
+		margin-top:50px;
+	}
+	#login_input li{
+		list-style-type:none;
+		height:50px;
+	}
+	#login_input li span.login_info{
+		float:left;
+		width:100px;
+		padding:5px 6px 0px 19px;
+		font:14px;
+		color:#787878;
+	}
+	.login_submit,.login_reset{
+		width:100px;
+		height:30px;
+		font:15px "Microsoft YaHei";
+		font-weight:bold;
+		margin:30px 10px;
+		background-color:#84C1FF;
+		color:#FFF;
+		border:0px;
+	}
+	.login_submit:hover,.login_reset:hover{
+		background-color:#999;
+	}
+	.login_submit:active,.login_reset:active{
+		background-color:#004F75;
+	}
+	/*input-css*/
+	input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+input,select,textarea, {
+    font-weight: normal;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+select,textarea,option{
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	color:#999;
+	font-family:"Microsoft YaHei";
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+input[type="file"]
+{
+    display: inline-block;
+   
+    
+    
+    
+    color: #555555;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	color:#999;
+	line-height:16px;
+	font-family:"Microsoft YaHei";
+}
+
+
+
+
+textarea {
+    height: auto;
+}
+
+textarea,select,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+ {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+textarea:focus,
+select:focus,
+input:focus,
+.uneditable-input:focus {
+    border-color: rgba(96, 190, 17, 0.80);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(96, 190, 17, 0.60);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(96, 190, 17, 0.60);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(96, 190, 17, 0.60);
+}
+
+
+select,input[type="button"],input[type="submit"] {
+    height: 30px;
+    /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+    *margin-top: 4px;
+    /* For IE7, add top margin to align select with labels */
+ 
+    vertical-align: middle;
+}
+/*backstage-left*/
+.htgl_sub{
+	font:16px "Microsoft YaHei";
+	color:#FFF;
+	float:right;
+}
+.ht_function_sub:hover{
+		opacity: .8; /* Standard: FF gt 1.5, Opera, Safari */  
+		-ms-filter: "alpha(opacity=80)"; /* IE 8 */  
+		filter: alpha(opacity=80); /* IE lt 8 */  
+		-khtml-opacity: .8; /* Safari 1.x */  
+		-moz-opacity: .8; /* FF lt 1.5, Netscape */
+}
+.sub_sub a{
+	display:block;
+	height:35px;
+	width:260px;
+	background:url(../graph/sub_sub2.gif);
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	padding-top:9px;
+	padding-bottom:-3px;
+}
+.sub_sub a:hover{
+	background:url(../graph/sub_sub_hover2.gif);
+}
+body.scrollbar{
+	background-color:#D4D4D4;
+}
+.right_title{
+	font:16px "Microsoft YaHei";
+	color:#FFF;
+}
+.look_cjwt{
+		font:14px "Microsoft YaHei";
+		color:#999;
+		line-height:20px;
+	}
+	

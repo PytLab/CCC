@@ -1,0 +1,165 @@
+<script language="javascript">
+ function change(x,y)
+  {
+    if(x.style.display=="none")
+	 {
+	   x.style.display="";
+	 }
+	 else if(x.style.display=="")
+	  {
+	   x.style.display="none";
+	   y.background="images/bg_16_11.jpg";
+	  }
+  
+  }
+</script>
+<table width="260" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="60" background="graph/ht_function.gif">&nbsp;</td>
+  </tr>
+</table>
+<table width="260" height="40" border="0" align="center" cellpadding="0" cellspacing="0" onclick="change(s111,img_gggg)" style="cursor:hand">
+  <tr> 
+    <td background="graph/ht_function_sub_affiches.gif" id="img_gggg" class="ht_function_sub" style="background-repeat:no-repeat">&nbsp;</td>
+  </tr>
+</table>
+<table name="s111" id="s111" width="260" border="0" align="center" cellpadding="0" cellspacing="0" 
+
+ <?php
+	if(!($_GET[htgl]=="添加公告" ||$_GET[htgl]=="删除公告" )){
+?>
+			  style="display:none"
+			  <?php
+			  }
+			  ?>
+
+>
+  <tr> 
+    <td width="260" height="35" bgcolor="#909090"><div align="left" class="sub_sub"><a href="default.php?htgl=添加公告">添加公告</a></div></td>
+  </tr>
+  <tr> 
+    <td width="260" height="35" bgcolor="#909090"><div align="left" class="sub_sub"><a href="default.php?htgl=删除公告">删除公告</a></div></td>
+  </tr>
+</table>
+
+
+
+<table width="260" height="40" border="0" align="center" cellpadding="0" cellspacing="0" onclick="change(s11,img_s11)" style="cursor:hand">
+  <tr> 
+    <td background="graph/ht_function_sub_jszc.gif" id="img_s11" class="ht_function_sub" style="background-repeat:no-repeat">&nbsp;</td>
+  </tr>
+</table>
+<table name="s11" id="s11" width="260" border="0" align="center" cellpadding="0" cellspacing="0" 
+  <?php
+	if(!($_GET[htgl]=="添加常见问题" ||$_GET[htgl]=="编辑常见问题" ||$_GET[htgl]=="查看客户反馈" )){
+?>
+			  style="display:none"
+			  <?php
+			  }
+			  ?>
+
+
+>
+  <tr> 
+    
+    <td width="260" height="35" ><div align="left" class="sub_sub"><a href="default.php?htgl=添加常见问题">添加常见问题</a></div></td>
+  </tr>
+  <tr> 
+   
+    <td width="260" height="35"><div align="left" class="sub_sub"><a href="default.php?htgl=编辑常见问题">编辑常见问题</a></div></td>
+  </tr>
+  
+   <tr> 
+    
+    <td width="260" height="35"><div align="left" class="sub_sub"><a href="default.php?htgl=查看客户反馈">查看客户反馈</a></div></td>
+  </tr>
+</table>
+ 
+<table width="260" height="40" border="0" align="center" cellpadding="0" cellspacing="0" onclick="change(yj,img_yj)" style="cursor:hand">
+  <tr> 
+    <td background="graph/ht_function_sub_resource.gif" id="img_yj" class="ht_function_sub" style="background-repeat:no-repeat">&nbsp;</td>
+  </tr>
+</table>
+<table name="yj" id="yj" width="260" border="0" align="center" cellpadding="0" cellspacing="0" 
+ <?php
+	if(!($_GET[htgl]=="添加软件试用" ||$_GET[htgl]=="编辑软件试用")){
+?>
+			  style="display:none"
+			  <?php
+			  }
+			  ?>
+
+>
+ 
+  <tr> 
+    
+    <td width="260" height="35" ><div align="left" class="sub_sub"><a href="default.php?htgl=添加软件试用">添加软件试用</a></div></td>
+  </tr>
+  <tr> 
+    
+    <td width="260" height="35"><div align="left" class="sub_sub"><a href="default.php?htgl=编辑软件试用">编辑软件试用</a></div></td>
+  </tr>
+</table>
+
+
+
+
+
+
+<table width="260" height="40" border="0" align="center" cellpadding="0" cellspacing="0" onclick="change(gg,img_gg)" style="cursor:hand">
+  <tr> 
+    <td background="graph/ht_function_sub_news.gif" id="img_gg" class="ht_function_sub" style="background-repeat:no-repeat">&nbsp;</td>
+  </tr>
+</table>
+<table name="gg" id="gg" width="260" border="0" align="center" cellpadding="0" cellspacing="0" 
+ <?php
+	if(!($_GET[htgl]=="添加升级包" ||$_GET[htgl]=="编辑升级包" ||$_GET[htgl]=="添加序列号" ||$_GET[htgl]=="编辑序列号" )){
+?>
+			  style="display:none"
+			  <?php
+			  }
+			  ?>
+
+
+>
+  <tr> 
+    <td width="260" height="35"><div align="left" class="sub_sub"><a href="news_editor/index.php">添加新闻</a></div></td>
+  </tr>
+  <tr> 
+    <td height="35" ><div align="left" class="sub_sub"><a href="default.php?htgl=编辑新闻">编辑新闻</a></div></td>
+  </tr> 
+</table>
+
+
+
+<table width="260" height="40" border="0" align="center" cellpadding="0" cellspacing="0" onclick="change(gggg,img_gggg)" style="cursor:hand">
+  <tr> 
+    <td background="graph/ht_function_sub_blog.gif" id="img_gggg" class="ht_function_sub" style="background-repeat:no-repeat">&nbsp;</td>
+  </tr>
+</table>
+<table name="gggg" id="gggg" width="260"border="0" align="center" cellpadding="0" cellspacing="0"
+
+ <?php
+	if(!($_GET[htgl]=="订单管理")){
+?>
+			  style="display:none"
+			  <?php
+			  }
+			  ?>
+>
+   <tr> 
+    <td width="260" height="35" background="images/bg_16_16.jpg"><div align="left" class="sub_sub"><a href="default.php?htgl=订单管理">订单管理</a></div></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+<table width="260" height="40" border="0" align="center" cellpadding="0" cellspacing="0" background="graph/ht_function_sub_below.gif">
+  <tr>
+    <td align="center"></td>
+  </tr>
+</table>
