@@ -1,2 +1,61 @@
-$title = "Homepage - CCC";
-$charset = "UTF-8";
+<?php
+    $title = "首页 - CCC";
+    $charset = "UTF-8";
+
+    /*首页菜单栏*/
+    $home = "Home";
+    $people = "People";
+    /*in people*/
+    $teachers = "Research Stuff";
+    $graduates = "Graduates";
+    $graduated = "毕业学生";
+
+    $news = "News";
+    $highlights = "Highlights";
+    /*in highlights*/
+    $latest = "Latest";
+    $high_list = "Highlights list";
+
+    $pubs = "Publications";
+    $courses = "Courses";
+    /*in courses*/
+    $course_list = "Courses List";
+    $course_acc = "Account";
+
+    $meeting = "Meeting";
+    $contact = "Contact";
+    $lan = "CN";
+
+    /*右侧边栏*/
+    $more_high = "More Highlights ->";
+    $more_news = "More News ->";
+    $more_pub = "More Publications ->";
+    $more_contact = "More Details ->";
+
+    /*新闻列表*/
+    $news_ttl = "News Items";
+    /*highlights列表*/
+    $high_ttl = "Science Highlights";
+    /*文章发表列表*/
+    $pub_ttl = "Publications";
+    /*课程列表*/
+    $course_ttl = "Courses";
+    /*研究人员*/
+    $people = "People";
+    /*联系方式*/
+    $contact = "Contact";
+
+    /*背景图片链接*/
+    $sci_highlight = "./graph/HomePage/ttl_h3_highlights_en.gif";  //首页highlights
+    $people_ttl = "./graph/HomePage/people_ttl_en.gif";
+    $stuff_ttl = "./graph/HomePage/research_staff_ttl_en.gif";
+    $graduate_ttl = "./graph/HomePage/graduate_ttl_en.gif";
+    $graduated_ttl = "./graph/HomePage/undergraduate_ttl_en.gif";
+    $news_ttl = "./graph/HomePage/ttl_h3_news_en.gif";
+    $pubs_ttl = "./graph/HomePage/ttl_h3_pub_en.gif";
+    $course_info_ttl = "./graph/courses/ttl/course_info_ttl_en.gif";
+    $courses_ttl = "./graph/courses/ttl/course_ttl_en.gif";
+    $res_ttl = "./graph/courses/ttl/coursefile_ttl_en.gif";
+    $contact_ttl = "./graph/HomePage/contact_ttl_en.gif";
+
+?>
