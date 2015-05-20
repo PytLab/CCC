@@ -50,7 +50,7 @@
 		margin:0 auto;
 		margin-bottom:20px;
 		height:110px;
-		background-image:url(graph/courses/ttl/coursefile_ttl.gif);
+		background-image:url(<?php echo $res_ttl;?>);
 	}
 	.resource_list{
 		background-color:#F9F9F9;

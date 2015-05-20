@@ -40,4 +40,22 @@
     $pub_ttl = "发表论文";
     /*课程列表*/
     $course_ttl = "教学课程";
+    /*研究人员*/
+    $people = "研究人员";
+    /*联系方式*/
+    $contact = "联系方式";
+
+    /*背景图片链接*/
+    $sci_highlight = "./graph/HomePage/ttl_h3_highlights_cn.gif";  //首页highlights
+    $people_ttl = "./graph/HomePage/people_ttl_cn.gif";
+    $stuff_ttl = "./graph/HomePage/research_staff_ttl_cn.gif";
+    $graduate_ttl = "./graph/HomePage/graduate_ttl_cn.gif";
+    $graduated_ttl = "./graph/HomePage/undergraduate_ttl_cn.gif";
+    $news_ttl = "./graph/HomePage/ttl_h3_news_cn.gif";
+    $pubs_ttl = "./graph/HomePage/ttl_h3_pub_cn.gif";
+    $course_info_ttl = "./graph/courses/ttl/course_info_ttl_cn.gif";
+    $courses_ttl = "./graph/courses/ttl/course_ttl_cn.gif";
+    $res_ttl = "./graph/courses/ttl/coursefile_ttl_cn.gif";
+    $contact_ttl = "./graph/HomePage/contact_ttl_cn.gif";
+
 ?>

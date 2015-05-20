@@ -3,7 +3,8 @@
 <head>
 <link rel="shortcut icon" href="icon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>People-CCC</title>
+<?php include_once("top_index.php");?>
+<title><?php echo $people;?></title>
 <style>
 	body{
 		background-image:url(graph/Blog/grey.jpg);
@@ -32,7 +33,7 @@
 		width:900px;
 		margin:0 auto;
 		height:110px;
-		background-image:url(graph/HomePage/people_ttl.gif);
+		background-image:url(<?php echo $people_ttl;?>);
 	}
 	#people_all{
 		margin:0 auto;
@@ -69,7 +70,7 @@
 		width:900px;
 		margin:0 auto;
 		height:70px;
-		background-image:url(graph/HomePage/research_staff_ttl.gif);
+		background-image:url(<?php echo $stuff_ttl;?>);
 	}
 	.people_box{
 		float:left;
@@ -152,28 +153,25 @@
 		width:900px;
 		margin:0 auto;
 		height:70px;
-		background-image:url(graph/HomePage/graduate_ttl.gif);
+		background-image:url(<?php echo $graduate_ttl;?>);
 	}
-	#undergraduate{
+	#graduated{
 		width:950px;
 		height:auto;
 		margin-bottom:20px;
 		/*background-color:#06F;*/
 		display:table;
 	}
-	#undergraduate_title{
+	#graduated_title{
 		width:900px;
 		margin:0 auto;
 		height:70px;
-		background-image:url(graph/HomePage/undergraduate_ttl.gif);
+		background-image:url(<?php echo $graduated_ttl;?>);
 	}
 </style>
 </head>
 
 <body>
-	<?php
-		include_once("top_index.php");
-	?>
 	<div id="people_main">
     	<div id="people_title"></div>
         <div id="people_all">
@@ -238,7 +236,7 @@
 			?>
         </div>
         
-        <div id="undergraduate">
+        <div id="graduated">
         	
             <?php
             	$sql_ugrad=mysql_query("select * from tb_people where people_type = 2 order by id");
@@ -246,7 +244,7 @@
 				if($info_ugrad!="")
 				{
 			?>
-            <div id="undergraduate_title"></div>
+            <div id="graduated_title"></div>
             <?php
 					do
 					{

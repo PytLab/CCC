@@ -1,3 +1,6 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 <?php 
     date_default_timezone_set(PRC);
 	@session_start(); 
@@ -5,10 +8,7 @@
 	include_once("./function.php");
 	include_once("./get_language.php"); //识别浏览器语言 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html"; charset="<?php echo $charset?>" />
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
 
 <!--<script type=text/javascript>
 	function menuFix() 
@@ -63,7 +63,7 @@ window.onload=menuFix;
                         	<ul class="sub_menu">
                                 <li><a href="people.php#research_staff" ><?php echo $teachers?></a></li>
                                 <li><a href="people.php#graduate" ><?php echo $graduates?></a></li>
-                                <li><a href="people.php#undergraduate" ><?php echo $graduated?></a></li>
+                                <li><a href="people.php#graduated" ><?php echo $graduated?></a></li>
                             </ul>
                         </li>
                         

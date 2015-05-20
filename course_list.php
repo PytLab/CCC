@@ -34,7 +34,7 @@
             width:900px;
             margin:0 auto;
             height:110px;
-            background-image:url(graph/courses/ttl/course_ttl.gif);
+            background-image:url(<?php echo $courses_ttl;?>);
         }
         .course_box{
             margin:0 auto;
@@ -92,7 +92,7 @@
             width:620px;
             height:40px;
             /*background-color:#963;*/
-            background-image:url(graph/courses/ttl/course_info_ttl.gif);
+            background-image:url(<?php echo $course_info_ttl;?>);
             border-bottom:1px #CCCCCC solid;
         }
         .info_contnt{

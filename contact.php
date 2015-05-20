@@ -1,6 +1,5 @@
 <?php
 	include_once("top_index.php");
-	
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -36,7 +35,7 @@
 		width:900px;
 		margin:0 auto;
 		height:110px;
-		background-image:url(graph/HomePage/contact_ttl.gif);
+		background-image:url(<?php echo $contact_ttl;?>);
 	}
 	#contact_info{
 		width:880px;

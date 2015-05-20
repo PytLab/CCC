@@ -10,7 +10,7 @@
             height: 110px;
             margin: 0px 0 10px 0;
             padding: 0px 0 0 0px ;
-            background:url(./graph/HomePage/ttl_h3_soft_tech.gif) no-repeat;
+            background:url(<?php echo $pubs_ttl;?>) no-repeat;
             font-weight: bold;
             float: left;
         }

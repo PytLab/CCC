@@ -29,7 +29,7 @@
                     </div>	
                 </div>
                 <div id="forume">
-                    <h3></h3>
+                    <h3 style="background:url(<?php echo $sci_highlight;?>) no-repeat;"></h3>
                     <?php include_once("highlights_index.php");?>
                 </div>
              </div>

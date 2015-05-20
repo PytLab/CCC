@@ -305,20 +305,6 @@
 		padding:0 0 40px 0;
 	}
 	
-	#news {
-		width: 770px;
-  		float: left;
-	}
-	#news h3{
-		width:770px;
-  		height: 110px;
-  		margin: 0px 0 0 0;
-  		padding: 0px 0 0 0px ;
-  		background:url(../graph/HomePage/ttl_h3_news.gif) no-repeat;
-  		 
-		font-weight: bold;
-  		float: left;
-	}
 	#body_left .area_news {
 		width:770px;
   		margin: 0px 0;
@@ -389,13 +375,13 @@
 		text-decoration:none;
 		color:#0CF;
 	}
-	/*论坛信息展示*/
+	/*highlights index*/
 	#forume h3{
 		width:770px;
   		height: 110px;
   		margin: 0px 0 0 0;
   		padding: 0px 0 0 0px ;
-  		background:url(../graph/HomePage/ttl_h3_forume.gif) no-repeat;
+  		/*background:url(../graph/HomePage/ttl_h3_forume.gif) no-repeat;*/
   		 
 		font-weight: bold;
   		float: left;
