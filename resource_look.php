@@ -20,7 +20,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title><?php echo $course_file;?></title>
 <style>
 	body{
 		background-image:url(graph/Blog/grey.jpg);
@@ -50,7 +50,7 @@
 		margin:0 auto;
 		margin-bottom:20px;
 		height:110px;
-		background-image:url(graph/courses/ttl/coursefile_ttl.gif);
+		background-image:url(<?php echo $res_ttl;?>);
 	}
 	#file_info{
 		width:540px;
