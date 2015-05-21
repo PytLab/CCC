@@ -50,7 +50,7 @@
     $people_ttl = "./graph/HomePage/people_ttl_en.gif";
     $stuff_ttl = "./graph/HomePage/research_staff_ttl_en.gif";
     $graduate_ttl = "./graph/HomePage/graduate_ttl_en.gif";
-    $graduated_ttl = "./graph/HomePage/undergraduate_ttl_en.gif";
+    $graduated_ttl = "./graph/HomePage/graduated_ttl_en.gif";
     $news_ttl = "./graph/HomePage/ttl_h3_news_en.gif";
     $pubs_ttl = "./graph/HomePage/ttl_h3_pub_en.gif";
     $course_info_ttl = "./graph/courses/ttl/course_info_ttl_en.gif";
