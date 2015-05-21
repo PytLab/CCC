@@ -17,13 +17,13 @@ if($_SESSION["admin_nc"]=="")
 	  <script language="javascript">
 	     function chkinput(form){
 		   if(form.title.value==""){
-		     alert("请输入公告标题");
+		     alert("请输入Publication标题");
 		     form.title.focus();
 			 return(false);
 		   }
 		   
 		   if(form.content.value==""){
-		     alert("请输入公告内容");
+		     alert("请输入Publication内容");
 		     form.content.focus();
 			 return(false);
 		   }
@@ -37,7 +37,7 @@ if($_SESSION["admin_nc"]=="")
 	  </script>
 <table width="770" border="0" align="center" cellpadding="10" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#D4D4D4">
         
-		<form name="form1" method="post" action="savetell.php" onSubmit="return chkinput(this)" enctype="multipart/form-data">
+		<form name="form1" method="post" action="savepub.php" onSubmit="return chkinput(this)" enctype="multipart/form-data">
 		
 		<tr>
 		  <td height="40" colspan="2" align="center" class="right_title" bgcolor="#909090"><?php echo $htgl;?></td>

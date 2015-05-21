@@ -60,8 +60,8 @@ if($_SESSION["admin_nc"]=="")
           <td width="564" bgcolor="#FFFFFF">&nbsp;
           	<select name="type" class="search_select">
                <option value="0">Research_Staff</option>
-               <option value="1" selected>Graduate_Student</option>
-               <option value="2">UndergraduateStudent</option>
+               <option value="1" selected>Currnet Group Member</option>
+               <option value="2">Previous Group Member</option>
             </select>
           </td>
         </tr>

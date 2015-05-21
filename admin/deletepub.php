@@ -7,7 +7,7 @@
 	$info_file=mysql_fetch_array($sql_file);
 	//delete the paper file
 	$path_file=".".$info_file[paper];
-	if(file_exists($path_file))
+	if($info_file[paper] && file_exists($path_file))  //若数据库中存在paper且文件存在
 	{
 		if(unlink($path_file))
 		{

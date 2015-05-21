@@ -21,11 +21,11 @@ if($_FILES["paper"]["name"]==true)
 {
 	$query=mysql_query("update tb_publication set title='$gg_title',details='$details',author='$author',pub_time='$pub_time',link='$gg_link',paper='$paper' where id=".$id."",$conn);
 	 if($query==true){ 
-	   echo $_FILES['paper']['error']."<script>alert('公告修改成功！');history.back();</script>";
+	   echo $_FILES['paper']['error']."<script>alert('Publication修改成功！');history.back();</script>";
 	
 	}else{
 	   
-	   echo "<script>alert('公告修改失败！');history.back();</script>";
+	   echo "<script>alert('Publication修改失败！');history.back();</script>";
 	
 	}
 }
@@ -33,11 +33,11 @@ else
 {
 	$query=mysql_query("update tb_publication set title='$gg_title',details='$details',author='$author',pub_time='$pub_time',link='$gg_link' where id=".$id."",$conn);
 	 if($query==true){ 
-	   echo $_FILES['paper']['error']."<script>alert('公告修改成功！');history.back();</script>";
+	   echo $_FILES['paper']['error']."<script>alert('Publication修改成功！');history.back();</script>";
 	
 	}else{
 	   
-	   echo "<script>alert('公告修改失败！');history.back();</script>";
+	   echo "<script>alert('Publication修改失败！');history.back();</script>";
 	
 	}	
 }

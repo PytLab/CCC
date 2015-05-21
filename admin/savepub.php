@@ -22,11 +22,11 @@ if($_FILES["paper"]["name"]==true)
 {
 	$query=mysql_query("insert into tb_publication(title,link,pub_time,createtime,details,author,paper) values('$gg_title','$gg_link','$pub_time','$addtime','$details','$author','$address_in_db')",$conn);
 	 if($query==true){ 
-	   echo $_FILES['paper']['error']."<script>alert('公告添加成功！');history.back();</script>";
+	   echo $_FILES['paper']['error']."<script>alert('Publication添加成功！');history.back();</script>";
 	
 	}else{
 	   
-	   echo "<script>alert('公告添加失败！');history.back();</script>";
+	   echo "<script>alert('Publication添加失败！');history.back();</script>";
 	
 	}
 }
@@ -34,11 +34,11 @@ else
 {
 	$query=mysql_query("insert into tb_publication(title,link,pub_time,createtime,details,author) values('$gg_title','$gg_link','$pub_time','$addtime','$details','$author')",$conn);
 	 if($query==true){ 
-	   echo $_FILES['paper']['error']."<script>alert('公告添加成功！');history.back();</script>";
+	   echo $_FILES['paper']['error']."<script>alert('Publication添加成功！');history.back();</script>";
 	
 	}else{
 	   
-	   echo "<script>alert('公告添加失败！');history.back();</script>";
+	   echo "<script>alert('Publication添加失败！');history.back();</script>";
 	
 	}	
 }

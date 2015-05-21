@@ -21,11 +21,11 @@ case "编辑新闻":
 case "编辑Highlights":
   include("edit_highlights.php");
    break;
-case "添加公告":
-  include("addtell.php");
+case "添加Publication":
+  include("addpub.php");
    break;
-case "删除公告":
-  include("edittell.php");
+case "删除Publication":
+  include("editpub.php");
    break;
 case "添加people":
 	include("addpeople.php");
@@ -78,8 +78,8 @@ case "编辑coursefile_detail":
 case "编辑coursefile_detail_detail":
 	include("edit_coursefile_detail_detail.php");
 	break;
-case "编辑tell_detail":
-	include("edit_tell_detail.php");
+case "编辑pub_detail":
+	include("edit_pub_detail.php");
 	break;
 case "编辑pic":
 	include("edit_pic.php");
@@ -88,7 +88,7 @@ case "编辑homepic":
 	include("edit_homepic.php");
 	break;
 case "":
-  include("edittell.php");
+  include("editpub.php");
    break;
 
 }

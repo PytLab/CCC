@@ -86,8 +86,8 @@ if($_SESSION["admin_nc"]=="")
           
           <td align="right" bgcolor="#F7F7F7"><div align="center"><?php echo $info[pub_time];?></div></td>
           <td align="right" bgcolor="#F7F7F7"><div align="center"><?php echo $info[createtime];?></div></td>
-          <td align="right" bgcolor="#F7F7F7"><div align="center"><a href="default.php?htgl=编辑tell_detail&id=<?php echo $info[id];?>">编辑</a></div></td>
-          <td height="25" align="right" bgcolor="#F7F7F7"><div align="center"><a href="default.php?htgl=编辑公告&mtid=<?php echo $info[id];?>"></a><a href="javascript:if(window.confirm('您确定删除该信息么？')==true){window.location.href='deletetell.php?id=<?php echo $info[id];?>';}"><img src="graph/delete.gif" width="22" height="22" border="0"></a></div></td>
+          <td align="right" bgcolor="#F7F7F7"><div align="center"><a href="default.php?htgl=编辑pub_detail&id=<?php echo $info[id];?>">编辑</a></div></td>
+          <td height="25" align="right" bgcolor="#F7F7F7"><div align="center"><a href="default.php?htgl=编辑公告&mtid=<?php echo $info[id];?>"></a><a href="javascript:if(window.confirm('您确定删除该信息么？')==true){window.location.href='deletepub.php?id=<?php echo $info[id];?>';}"><img src="graph/delete.gif" width="22" height="22" border="0"></a></div></td>
         </tr>
 	 <?php
 	      }
@@ -100,7 +100,7 @@ if($total!=0)
 ?>
 <table width="770" height="40" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#909090">
   <tr>
-    <td width="500" height="40" bgcolor="#909090" class="right_title"><div align="left"> 共有公告&nbsp;<?php echo $total;?>&nbsp;条&nbsp;每页显示&nbsp;<?php echo $pagesize?>&nbsp;个&nbsp;第&nbsp;<?php echo $page;?>&nbsp;页&nbsp;/共&nbsp;<?php echo $pagecount?>&nbsp;页</div></td>
+    <td width="500" height="40" bgcolor="#909090" class="right_title"><div align="left"> 共有Publications&nbsp;<?php echo $total;?>&nbsp;篇&nbsp;每页显示&nbsp;<?php echo $pagesize?>&nbsp;个&nbsp;第&nbsp;<?php echo $page;?>&nbsp;页&nbsp;/共&nbsp;<?php echo $pagecount?>&nbsp;页</div></td>
     <td width="300">
 	<div align="right">
 	<?php
@@ -108,8 +108,8 @@ if($total!=0)
 	{
     ?>
 
-  <a href="default.php?htgl=编辑公告&page=1" title="首页"><font face="webdings"> 9 </font></a> 
-  <a href="default.php?htgl=编辑公告&page=<?php echo $page-1;?>" title="前一页"><font face="webdings"> 7 </font></a>
+  <a href="default.php?htgl=删除Publication&page=1" title="首页"><font face="webdings"> 9 </font></a> 
+  <a href="default.php?htgl=删除Publication&page=<?php echo $page-1;?>" title="前一页"><font face="webdings"> 7 </font></a>
   <?php
     }
    if($pagecount<=4)
@@ -117,7 +117,7 @@ if($total!=0)
 		for($i=1;$i<=$pagecount;$i++)
 		{
   ?>
-        <a href="default.php?htgl=编辑公告&page=<?php echo $i;?>"><?php echo $i;?></a>
+        <a href="default.php?htgl=删除Publication&page=<?php echo $i;?>"><?php echo $i;?></a>
   <?php
 		 }
 	  }
@@ -126,18 +126,18 @@ if($total!=0)
 		 for($i=1;$i<=4;$i++)
 		  {	 
   ?>
-          <a href="default.php?htgl=编辑公告&page=<?php echo $i;?>"><?php echo $i;?></a>
+          <a href="default.php?htgl=删除Publication&page=<?php echo $i;?>"><?php echo $i;?></a>
   <?php 
           }
   ?>
-        <a href="default.php?htgl=编辑公告&page=<?php 
+        <a href="default.php?htgl=删除Publication&page=<?php 
 		 if($pagecount>=$page+1)
 		   echo $page+1;
 		  else
 		   echo 1; 
 		 
 		 ?>" title="后一页"><font face="webdings"> 8 </font></a> 
-		<a href="default.php?htgl=编辑公告&page=<?php echo $pagecount;?>" title="尾页"><font face="webdings"> : </font></a>
+		<a href="default.php?htgl=删除Publication&page=<?php echo $pagecount;?>" title="尾页"><font face="webdings"> : </font></a>
   <?php 
           }
 		  }
