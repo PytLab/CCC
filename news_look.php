@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php include_once("top_index.php");?>
 <head>
-<title>Homepage - CCC</title>
+<title><?php echo $title;?></title>
 <style>
 	* { margin:0; padding:0;  word-wrap: break-word; }
 	#news_list_title{
@@ -9,7 +10,7 @@
 		
   		margin: 0px 0 10px 0;
   		padding: 0px 0 0 0px ;
-  		background:url(graph/HomePage/ttl_h3_news.gif) no-repeat;
+  		background:url(<?php echo $news_ttl;?>) no-repeat;
   		 
 		font-weight: bold;
   		float: left;
@@ -53,71 +54,40 @@
 </style>
 </head>
         
-
-<body>
-<?php
-				include_once("top_index.php");
-			?>
-<div id="body">
+<html>
+    <body>
+        <div id="body">
 			
         	<div id="body_left">
             	<div id="news_list_title"></div>
             	<div id="news_paper">
-						<?php
-							$id=$_GET[id];
-                            $sql_news=mysql_query("select * from tb_news where id='".$id."'",$conn);
-                            $info_news=mysql_fetch_array($sql_news);//获取highlights数据库信息
+					<?php
+						$id=$_GET[id];
+                        $sql_news=mysql_query("select * from tb_news where id='".$id."'",$conn);
+                        $info_news=mysql_fetch_array($sql_news);//获取highlights数据库信息
+                    ?>
+                    <div id="news_title">
+                        <?php
+                            echo $info_news[title];
                         ?>
-                        <div id="news_title">
-                            <?php
-                                echo $info_news[title];
-                            ?>
-                        </div>
-                        <div id="news_date">
-                        	<?php
-                            	echo "Date&nbsp;:&nbsp;".$info_news[createtime];
-							?>
-                        </div>
-                        <div id="news_content">
-                            <?php 
-                                echo $info_news[content];
-                            ?>
-                            
-                        </div>
                     </div>
+                    <div id="news_date">
+                        <?php
+                            echo "Date&nbsp;:&nbsp;".$info_news[createtime];
+                        ?>
+                    </div>
+                    <div id="news_content">
+                        <?php 
+                            echo $info_news[content];
+                        ?>      
+                    </div>
+                </div>
             </div>
-            <div id="body_right">
-              <h3>Scientific Highlights</h3>
-                <?php include_once("show_highlights.php");?>
-                <p class="more">
-                	<a href="highlights_list.php">More Hightlights</a>
-                </p>
-                <h3>News Items</h3>
-                <?php include_once("show_news2.php");?>
-                <p class="more">
-                	<a href="news_list.php">More Details</a>
-                </p>
-                
-                <h3>Publications</h3>
-                <p class="text">
-                	<?php include_once("show_affiches.php");?>
-                </p>
-                
-                <p class="more">
-                	<a href="publications_list.php">More Publications</a>
-                </p>
-                
-                <h3>Contact Us</h3>
-                <p class="text"></p>
-                <p class="more">
-                	<a href="#">Contact Details</a>
-                </p>
-            </div>
+            <!--右侧-->
+            <?php include_once("body_right.php");?> 
         </div>
         <div id="foot">
         	<?php include_once("footer.php");?>
-    </div>
-    </div>
-    
-</body>
+        </div>   
+    </body>
 </html>
