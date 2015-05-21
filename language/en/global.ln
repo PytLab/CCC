@@ -41,6 +41,7 @@
     $pub_ttl = "Publications";
     /*课程列表*/
     $course_ttl = "Courses";
+    $course_file = "Resource Download";
     /*研究人员*/
     $people = "People";
     /*联系方式*/
