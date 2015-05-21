@@ -24,7 +24,8 @@
 
     $meeting = "主办会议";
     $contact = "联系方式";
-    $lan = "EN";
+    $lan = "EN";  //在页面上的显示
+    $get_lang = "en";  //get的传值
 
     /*右侧边栏*/
     $more_high = "更多亮点 ->";

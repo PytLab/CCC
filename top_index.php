@@ -3,10 +3,11 @@
 <head>
 <?php 
     date_default_timezone_set(PRC);
-	@session_start(); 
+	//@session_start(); //session在change_language.php中start
 	include_once("./conn/conn.php"); 
 	include_once("./function.php");
-	include_once("./get_language.php"); //识别浏览器语言 
+	include_once("./get_language.php"); //识别浏览器语言
+	include_once("./change_language.php");  //通过点击链接切换语言
 ?>
 <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
 <link href="./css/main.css" rel="stylesheet" type="text/css" />
@@ -79,7 +80,7 @@
                         <li><a href="contact.php" ><?php echo $contact?></a>
                         </li>
                         <div id="language_change">
-                        	<a href="#"><?php echo $lan?></a>
+                        	<a href="<?php echo $_SERVER['PHP_SELF']; ?>?lang=<?php echo $get_lang;?>" target="_self"><?php echo $lan?></a>
                         </div>
                     </ul>
                     

@@ -24,7 +24,8 @@
 
     $meeting = "Meeting";
     $contact = "Contact";
-    $lan = "中文";
+    $lan = "中文";  //在页面上的显示
+    $get_lang = "cn";  //get的传值
 
     /*右侧边栏*/
     $more_high = "More Highlights ->";
