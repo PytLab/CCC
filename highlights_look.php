@@ -1,7 +1,7 @@
 <?php
 	include_once("top_index.php");
 ?><head>
-<title>Homepage - CCC</title>
+<title><?php echo $highlights;?></title>
 <style>
 	* { margin:0; padding:0; word-wrap: break-word; }
 	#highlights_content{
@@ -13,7 +13,7 @@
   		height: 110px;
   		margin: 0px 0 0 0;
   		padding: 0px 0 0 0px ;
-  		background:url(graph/HomePage/ttl_h3_forume.gif) no-repeat;
+  		background:url(<?php echo $sci_highlight;?>) no-repeat;
 		font-weight: bold;
   		float: left;
 	}
