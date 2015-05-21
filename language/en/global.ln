@@ -1,5 +1,5 @@
 <?php
-    $title = "首页 - CCC";
+    $title = "Home - CCC";
     $charset = "UTF-8";
 
     /*首页菜单栏*/
@@ -7,8 +7,8 @@
     $people = "People";
     /*in people*/
     $teachers = "Research Stuff";
-    $graduates = "Graduates";
-    $graduated = "毕业学生";
+    $graduates = "Currnet Group Members";
+    $graduated = "Previous Group Members";
 
     $news = "News";
     $highlights = "Highlights";
