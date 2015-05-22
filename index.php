@@ -16,17 +16,17 @@
         <div id="body">
             <!--左侧-->
             <div id="body_left">   
-                <div id="news">
+                <div id="show">
                     <?php
                         include("photo_change.php");//include_once("photo_change.php");
                     ?> 
-                    <div class="area_news">
-                        <div id="news_list" style="word-wrap:break-word;">
+                    <div class="area_intro">
+                        <div id="intro_list" style="word-wrap:break-word;">
                             <p><?php echo $intro;?></p>
                         </div>    
                     </div>
                 </div>
-                <div id="forume">
+                <div id="highlight">
                     <h3 style="background:url(<?php echo $sci_highlight;?>) no-repeat;"></h3>
                     <?php include_once("highlights_index.php");?>
                 </div>
