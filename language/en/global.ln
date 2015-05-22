@@ -1,6 +1,7 @@
 <?php
     $title = "Home - CCC";
     $charset = "UTF-8";
+    $intro = " The Cambridge University Centre for Computational Chemistry groups theoretically-minded members of the Cambridge Department of Chemistry in premises on the recently refurbished third floor of the Department. Around 50 members, comprising staff, research fellows, postdoctoral associates, postgraduate students, and visiting scientists from all over the world, work on many aspects of theoretical and computational chemistry.";
 
     /*首页菜单栏*/
     $home = "Home";

@@ -23,7 +23,7 @@
           <div class="area_news">
             <div id="news_list" style="word-wrap:break-word;">
               <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Cambridge University Centre for Computational Chemistry groups theoretically-minded members of the Cambridge Department of Chemistry in premises on the recently refurbished third floor of the Department. Around 50 members, comprising staff, research fellows, postdoctoral associates, postgraduate students, and visiting scientists from all over the world, work on many aspects of theoretical and computational chemistry.
+                <?php echo $intro;?>
               </p>
             </div>    
           </div>
