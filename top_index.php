@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-  <?php 
+  <?php
     date_default_timezone_set(PRC);
     //@session_start(); //session在change_language.php中start
     include_once("./conn/conn.php"); 
@@ -75,7 +75,11 @@
               <li><a href="contact.php" ><?php echo $contact?></a>
               </li>
               <div id="language_change">
-                <a href="<?php echo $_SERVER['PHP_SELF']; ?>?lang=<?php echo $get_lang;?>" target="_self"><?php echo $lan?></a>
+                <a href="<?php if(!empty($_SERVER['QUERY_STRING']))
+                                 echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&lang='.$get_lang;
+                               else
+                                 echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?lang='.$get_lang;
+                         ?>" target="_self"><?php echo $lan?></a>
               </div>
             </ul>
                     
