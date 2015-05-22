@@ -75,10 +75,10 @@
               <li><a href="contact.php" ><?php echo $contact?></a>
               </li>
               <div id="language_change">
-                <a href="<?php if(!empty($_SERVER['QUERY_STRING']))
-                                 echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&lang='.$get_lang;
-                               else
+                <a href="<?php if(empty($_SERVER['QUERY_STRING']))
                                  echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?lang='.$get_lang;
+                               else
+                                 echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&lang='.$get_lang;
                          ?>" target="_self"><?php echo $lan?></a>
               </div>
             </ul>
