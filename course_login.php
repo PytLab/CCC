@@ -1,52 +1,20 @@
 <?php
-	include_once("top_index.php");
-	$courseid=$_GET[courseid];
-	$sql_c=mysql_query("select * from tb_course where id=".$courseid."");
-	$info_c=mysql_fetch_array($sql_c);//get course info 
+    include_once("top_index.php");
+    $courseid=$_GET[courseid];
+    $sql_c=mysql_query("select * from tb_course where id=".$courseid."");
+    $info_c=mysql_fetch_array($sql_c);//get course info 
 ?>
 <head>
     <title><?php echo $course_ttl;?></title>
-	<style>
-        #btn_go{
-            width:180px;
-            height:50px;
-            margin:0 auto;
-            margin-top:40px;
-            text-align:center;  
-        }
-        #btn_go a{
-            display:block;
-            width:180px;
-            height:40px;
-            color:#ffffff;
-            font-size:20px;
-            font-weight:700;
-            padding-top:10px;
-            text-decoration:none;
-            -webkit-box-shadow: #999 0px 0px  5px ;
-            -moz-box-shadow: #999 0px 0px 5px ;
-            box-shadow: #999 0px 0px 5px ;
-            background-color:#06C;
-        }
-        #btn_go a:hover{
-            background-color:#00C6C6;
-            -webkit-box-shadow: #666 0px 0px  15px ;
-            -moz-box-shadow: #666 0px 0px 15px ;
-            box-shadow: #666 0px 0px 15px ;
-        }
-        #little_box ul{
-            text-align:center;
-        }
-    </style>
 </head>
 <html>
     <body>
         <div align="center" id="login_state2">
             <div id="little_box">                       
                 <?php 
-				    if($_SESSION["unc"]==""){
-		        ?>
-				<script language="JavaScript" type="text/javascript">
+                    if($_SESSION["unc"]==""){
+                ?>
+                <script language="JavaScript" type="text/javascript">
                     function submitu(form){
                         if(form.usernc.value=="")
                         {
@@ -66,7 +34,7 @@
                             form.xym.select();
                             return(false);
                         }
-                        return(true);	 
+                        return(true);     
                     }
                 </script>
                 <script language="JavaScript" type="text/javascript">
@@ -92,7 +60,7 @@
                                 <input type="password" name="userpwd" size="18" class="inputcss" />
                             </span>
                         </li>
-                      <input type="hidden" name="courseid" value="<?php echo $courseid;?>" />
+                        <input type="hidden" name="courseid" value="<?php echo $courseid;?>" />
                         <li>
                             <span class="login_info">Vertification Code：</span>
                             <span class="login_input_info">
@@ -105,23 +73,24 @@
                         <li>
                             <input type="submit" name="submit" value="Login" class="login_submit" style="width:100px"/>
                         </li>
-                        <li></li>
-                        
+                        <li></li>       
                     </ul>
-                 </form>
+                </form>
                 
                 <?php
-                  }else{
-                    $sqlu=mysql_query("select * from tb_user where usernc='".$_SESSION["unc"]."'and courseid=".$courseid,$conn);
-                    $infou=mysql_fetch_array($sqlu);
-                    if($infou=="")
-                    {
-                        echo "<div align=\"center\" style=\"margin-top:100px;\">Oops!(;￢д￢)<br /><br />&nbsp;Your account is not matched~<br /><br />눈_눈Please use correct account!</div>
-        ";
-                        echo "<script>alert('Ooops!\\n\\nPermission denied!\\n\\n눈_눈Please operate correctly!');history.go(-1);</script>";
                     }
                     else
                     {
+                        $sqlu=mysql_query("select * from tb_user where usernc='".$_SESSION["unc"]."'and courseid=".$courseid,$conn);
+                        $infou=mysql_fetch_array($sqlu);
+                        if($infou=="")
+                        {
+                            echo "<div align=\"center\" style=\"margin-top:100px;\">Oops!(;￢д￢)<br /><br />&nbsp;Your account is not matched~<br /><br />눈_눈Please use correct account!</div>
+        ";
+                            echo "<script>alert('Ooops!\\n\\nPermission denied!\\n\\n눈_눈Please operate correctly!');history.go(-1);</script>";
+                        }
+                        else
+                        {
                 ?>
                 <ul>
                    <li>
@@ -153,14 +122,14 @@
                     </a>
                 </div>
                 <?php
-                     }
-                 }
+                        }
+                    }
                 ?>
             </div>
         </div>
 
         <div id="foot">
-        	<?php include_once("footer.php");?>
+            <?php include_once("footer.php");?>
         </div>
     </body>
 </html>                       

@@ -297,32 +297,31 @@ body{
       float: left;
 }
 
-    /*introduction of CCC on home page*/
-    #intro_list{
-        background-color:#F9F9F9;
-        width:720px;
-        float:left;
-        margin-top:20px;
-        margin-left:0px;
-        margin-bottom:2px;
-        padding:10px 25px 10px 25px;
-        line-height:20px;
-        -webkit-box-shadow: #999 0px 0px 2px;
-        -moz-box-shadow: #999 0px 0px 2px;
-        box-shadow: #999 0px 0px 2px;
-        color:#444;
-    }
+/*introduction of CCC on home page*/
+#intro_list{
+    background-color:#F9F9F9;
+    width:720px;
+    float:left;
+    margin-top:20px;
+    margin-left:0px;
+    margin-bottom:2px;
+    padding:10px 25px 10px 25px;
+    line-height:20px;
+    -webkit-box-shadow: #999 0px 0px 2px;
+    -moz-box-shadow: #999 0px 0px 2px;
+    box-shadow: #999 0px 0px 2px;
+    color:#444;
+}
     
 /*highlights index*/
 #highlight h3{
     width:770px;
-      height: 110px;
-      margin: 0px 0 0 0;
-      padding: 0px 0 0 0px ;
-      /*background:url(../graph/HomePage/ttl_h3_forume.gif) no-repeat;*/
-           
+    height: 110px;
+    margin: 0px 0 0 0;
+    padding: 0px 0 0 0px ;
+    /*background:url(../graph/HomePage/ttl_h3_forume.gif) no-repeat;*/  
     font-weight: bold;
-      float: left;
+    float: left;
 }
     
 .button_change_quit{
@@ -331,7 +330,8 @@ body{
     width:600px;
 }
     
-/*login after state*/
+/*登录后状态显示*/
+/*state after login*/
 .zhuce{
     margin-left:26px;
 }
@@ -350,7 +350,8 @@ body{
     text-decoration:none;
 }
     
-/*login_in_state*/
+/*待登录状态*/
+/*login state*/
 #login_state2{
     margin:0 auto;
     width:700px;
@@ -395,6 +396,7 @@ body{
 }
 
 /*input CSS*/
+/*应用于所有的表单*/
 input[type="search"]{
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -497,4 +499,39 @@ select,input[type="button"],input[type="submit"]{
     /* For IE7, add top margin to align select with labels */
  
     vertical-align: middle;
+}
+
+/********************************/
+/* 一下是各个分页面中各部分的css*/
+/********************************/
+/*course_login.php*/
+#btn_go{
+    width:180px;
+    height:50px;
+    margin:0 auto;
+    margin-top:40px;
+    text-align:center;  
+}
+#btn_go a{
+    display:block;
+    width:180px;
+    height:40px;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:700;
+    padding-top:10px;
+    text-decoration:none;
+    -webkit-box-shadow: #999 0px 0px  5px ;
+    -moz-box-shadow: #999 0px 0px 5px ;
+    box-shadow: #999 0px 0px 5px ;
+    background-color:#06C;
+}
+#btn_go a:hover{
+    background-color:#00C6C6;
+    -webkit-box-shadow: #666 0px 0px  15px ;
+    -moz-box-shadow: #666 0px 0px 15px ;
+    box-shadow: #666 0px 0px 15px ;
+}
+#little_box ul{
+    text-align:center;
 }
