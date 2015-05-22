@@ -96,7 +96,7 @@
         width:670px;
         height:40px;
         /*background-color:#0FF;*/
-        background-image:url(graph/People/ttl/info_ttl.gif);
+        background-image:url(<?php echo $people_info;?>);
         margin-bottom:10px;
     }
     /*Interest*/
@@ -120,7 +120,7 @@
         width:670px;
         height:40px;
         /*background-color:#0FF;*/
-        background-image:url(graph/People/ttl/interest_ttl.gif);
+        background-image:url(<?php echo $people_interest;?>);
         margin-bottom:10px;
     }
     /*Pub*/
@@ -144,7 +144,7 @@
         width:670px;
         height:40px;
         /*background-color:#0FF;*/
-        background-image:url(graph/People/ttl/pub_ttl.gif);
+        background-image:url(<?php echo $people_pub;?>);
         margin-bottom:10px;
     }
 </style>
@@ -173,15 +173,15 @@
                 <?php
                     if($info[people_type]==0)
                     {
-                        echo "Research Staff";
+                        echo $teachers;
                     }
                     else if($info[people_type]==1)
                     {
-                        echo "Graduate Student";    
+                        echo $graduates;    
                     }
                     else
                     {
-                        echo "Undergraduate Student";
+                        echo $graduated;
                     }
                 ?>
             </div>
