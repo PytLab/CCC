@@ -50,6 +50,11 @@
     /*背景图片链接*/
     $sci_highlight = "./graph/HomePage/ttl_h3_highlights_cn.gif";  //首页highlights
     $people_ttl = "./graph/HomePage/people_ttl_cn.gif";
+    /*in people*/
+    $people_info = "./graph/People/ttl/info_ttl_cn.gif";
+    $people_interest = "./graph/People/ttl/interest_ttl_cn.gif";
+    $people_pub = "./graph/People/ttl/pub_ttl_cn.gif";
+
     $stuff_ttl = "./graph/HomePage/research_staff_ttl_cn.gif";
     $graduate_ttl = "./graph/HomePage/graduate_ttl_cn.gif";
     $graduated_ttl = "./graph/HomePage/graduated_ttl_cn.gif";
