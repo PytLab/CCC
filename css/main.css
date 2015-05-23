@@ -873,7 +873,7 @@ margin:0 auto;
 }
 
 /*新闻列表news_in_list.php*/
-.highlights_list{
+.news_list{
     background-color:#F9F9F9;
     width:720px;
     min-height:25px;
@@ -883,6 +883,48 @@ margin:0 auto;
     margin-left:0px;
     margin-bottom:2px;
     padding:10px 25px 8px 25px;
+    line-height:20px;
+    -webkit-box-shadow: #999 0px 0px  2px ;
+    -moz-box-shadow: #999 0px 0px 2px ;
+    box-shadow: #999 0px 0px 2px ;
+    color:#444;
+    opacity: .8;  
+    -ms-filter: "alpha(opacity=80)"; 
+    filter: alpha(opacity=80);   
+    -khtml-opacity: .8;  
+    -moz-opacity: .8; 
+}
+.news_list:hover{
+    /*opacity: .5;  
+    -ms-filter: "alpha(opacity=50)"; 
+    filter: alpha(opacity=50);   
+    -khtml-opacity: .5;  
+    -moz-opacity: .5; */
+    -webkit-box-shadow: #666 0px 0px  12px ;
+    -moz-box-shadow: #666 0px 0px 12px ;
+    box-shadow: #666 0px 0px 12px ;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:  0.5s;
+}
+.news_list a{
+    text-decoration:none;
+    color:#295454;
+    font-weight:600;
+    font-size:16px;
+}
+
+/*研究亮点列表highlights_in_list.php*/
+.highlights_list{
+    background-color:#F9F9F9;
+    width:720px;
+    height:130px;
+    float:left;
+    margin-top:5px;
+    margin-left:0px;
+    margin-bottom:2px;
+    padding:10px 25px 10px 15px;
     line-height:20px;
     -webkit-box-shadow: #999 0px 0px  2px ;
     -moz-box-shadow: #999 0px 0px 2px ;
@@ -908,13 +950,44 @@ margin:0 auto;
     -o-transition: 0.5s;
     transition:  0.5s;
 }
-.highlights_list a{
-    text-decoration:none;
-    color:#295454;
+.highlights_pho{
+    height:130px;
+    width:130px;
+    float:left;
+    
+}
+.highlights_pho img{
+    height:120px;
+    width:120px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    behavior:url(./PIE-CSS3/PIE.htc);
+}
+.highlights_title{
+    width:590px;
+    height:40px;
+    float:right;
+    color:#326565;
+    font-size:18px;
     font-weight:600;
-    font-size:16px;
+    margin-bottom:10px;
+}
+.highlights_title a{
+    text-decoration:none;
+    color:#326565;
+}
+.highlights_title a:hover{
+    text-decoration:none;
+    color:#09F;
+}
+.highlights_contnt{
+    width:590px;
+    height:90px;
+    float:right;
 }
 
+/*highlights_in_list.php & news_in_list.php共用*/
 #page_num{
     background-color:#f0f0f0;
     width:720px;
