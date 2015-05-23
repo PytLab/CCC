@@ -1,98 +1,10 @@
 <?php date_default_timezone_set(PRC); session_start(); include_once("./conn/conn.php"); include_once("./function.php"); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title></title>
 <style>
 	* { margin:0; padding:0; word-wrap: break-word; }
-	:hover{
-		-webkit-transition: 0.5s;
-		-moz-transition: 0.5s;
-		-o-transition: 0.5s;
-		transition:  0.5s;
-	}
-	.pub_list{
-		background-color:#F9F9F9;
-		width:720px;
-		min-height:25px;
-		height:auto;
-		float:left;
-		margin-top:3px;
-		margin-left:0px;
-		margin-bottom:2px;
-		padding:10px 25px 8px 25px;
-		line-height:20px;
-		-webkit-box-shadow: #999 0px 0px  2px ;
-		-moz-box-shadow: #999 0px 0px 2px ;
-		box-shadow: #999 0px 0px 2px ;
-		color:#444;
-		opacity: .8;  
-		-ms-filter: "alpha(opacity=80)"; 
-		filter: alpha(opacity=80);   
-		-khtml-opacity: .8;  
-		-moz-opacity: .8; 
-	}
-	.pub_list:hover{
-		/*opacity: .5;  
-		-ms-filter: "alpha(opacity=50)"; 
-		filter: alpha(opacity=50);   
-		-khtml-opacity: .5;  
-		-moz-opacity: .5; */
-		-webkit-box-shadow: #666 0px 0px  12px ;
-		-moz-box-shadow: #666 0px 0px 12px ;
-		box-shadow: #666 0px 0px 12px ;
-		-webkit-transition: 0.5s;
-		-moz-transition: 0.5s;
-		-o-transition: 0.5s;
-		transition:  0.5s;
-	}
-	.pub_list a{
-		text-decoration:none;
-		color:#295454;
-		font-weight:600;
-		font-size:16px;
-	}
-	.pub_list a:hover{
-		color:#AB5656;
-	}
-	#page_num{
-		background-color:#f0f0f0;
-		width:720px;
-		min-height:25px;
-		height:auto;
-		float:left;
-		margin-top:10px;
-		margin-left:0px;
-		margin-bottom:2px;
-		padding:10px 25px 8px 25px;
-		line-height:20px;
-		-webkit-box-shadow: #666 0px 0px  2px ;
-		-moz-box-shadow: #666 0px 0px 2px ;
-		box-shadow: #666 0px 0px 2px ;
-		color:#444;
-		opacity: .8;  
-		-ms-filter: "alpha(opacity=80)"; 
-		filter: alpha(opacity=80);   
-		-khtml-opacity: .8;  
-		-moz-opacity: .8;
-		text-align:center; 
-	}
-	#page_num a{
-		text-decoration:none;
-		width:20px;
-		height:20px;
-		-webkit-box-shadow: #999 0px 0px  2px ;
-		-moz-box-shadow: #999 0px 0px 2px ;
-		box-shadow: #999 0px 0px 2px ;
-		margin-left:10px;
-		padding:5px 5px 5px 5px;
-	}
-	#page_num a:hover{
-		-webkit-box-shadow: #999 0px 0px  15px ;
-		-moz-box-shadow: #999 0px 0px 15px ;
-		box-shadow: #999 0px 0px 15px ;
-	}
 </style>
 </head>
 
