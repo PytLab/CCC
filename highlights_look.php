@@ -1,48 +1,12 @@
 <?php
-	include_once("top_index.php");
+    include_once("top_index.php");
 ?>
 <head>
     <title><?php echo $highlights;?></title>
     <style>
         * { margin:0; padding:0; word-wrap: break-word; }
-        #highlights_content{
-            width: 770px;
-            float: left;
-        }
         #highlights_content h3{
-            width:770px;
-            height: 110px;
-            margin: 0px 0 0 0;
-            padding: 0px 0 0 0px ;
             background:url(<?php echo $sci_highlight;?>) no-repeat;
-            font-weight: bold;
-            float: left;
-        }
-        #highlights_paper{
-            background-color:#F9F9F9;
-            width:720px;
-            float:left;
-            margin-top:20px;
-            margin-left:0px;
-            padding:10px 25px 10px 25px;
-            line-height:20px;
-            -webkit-box-shadow: #999 0px 0px 2px;
-            -moz-box-shadow: #999 0px 0px 2px;
-            box-shadow: #999 0px 0px 2px;
-            color:#444;
-        }	
-        #highlights_paper img{
-            max-width:720px;
-            width:auto;
-            margin:0 auto;	
-            margin-bottom:10px;
-            margin-top:10px;
-        }
-        #highlights_title{
-            color:#366;
-            font-weight:600;
-            font-size:18px;
-            margin-bottom:10px;
         }
     </style>
 </head>
@@ -50,13 +14,13 @@
 <html>
     <body>
         <div id="body">
-			<!--左侧-->
-        	<div id="body_left">
-            	<div id="highlights_content">
-                	<h3></h3>
+            <!--左侧-->
+            <div id="body_left">
+                <div id="highlights_content">
+                    <h3></h3>
                     <div id="highlights_paper">
-						<?php
-							$id=$_GET[id];
+                        <?php
+                            $id=$_GET[id];
                             $sql_highlights=mysql_query("select * from tb_highlights where id='".$id."'",$conn);
                             $info_highlights=mysql_fetch_array($sql_highlights);//获取highlights数据库信息
                         ?>
@@ -78,7 +42,7 @@
             <?php include_once("body_right.php");?> 
         </div>
         <div id="foot">
-        	<?php include_once("footer.php");?>
+            <?php include_once("footer.php");?>
         </div>
     </body>
 </html>
