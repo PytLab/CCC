@@ -10,7 +10,6 @@
         <style>
             * { margin:0; padding:0; word-wrap: break-word; }
         </style>
-        <link href="./css/main.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="body">

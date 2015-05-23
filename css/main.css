@@ -663,3 +663,153 @@ select,input[type="button"],input[type="submit"]{
     /*background-color:#0FF;*/
     margin-bottom:10px;
 }
+
+/*研究人员首页people.php*/
+#people_main{
+    margin:0 auto;
+    width:950px;
+    height:auto;
+    margin-top:0px;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    background-color:#FFF;
+    -webkit-box-shadow: #999 0px 0px  5px ;
+    -moz-box-shadow: #999 0px 0px 5px ;
+    box-shadow: #999 0px 0px 5px ;
+    display:table;
+}
+#people_title{
+    width:900px;
+    margin:0 auto;
+    height:110px;
+}
+#people_all{
+margin:0 auto;
+    width:810px;
+    height:460px;
+    margin-top:15px;
+    margin-bottom:20px;
+    -webkit-box-shadow: #666 0px 0px  5px ;
+    -moz-box-shadow: #666 0px 0px 5px ;
+    box-shadow: #666 0px 0px 5px ;
+}
+#people_all:hover{
+    -webkit-box-shadow: #666 0px 0px  35px ;
+    -moz-box-shadow: #666 0px 0px 35px ;
+    box-shadow: #666 0px 0px 35px ;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:  0.5s;
+}
+#people_all img{
+    width:800px;
+    height:450px;
+    margin:5px 5px 5px 5px;
+}
+#research_staff{
+    width:950px;
+    height:auto;
+    margin-bottom:20px;
+    /*background-color:#06F;*/
+    display:table;
+}
+#research_staff_title{
+    width:900px;
+    margin:0 auto;
+    height:70px;
+}
+.people_box{
+    float:left;
+    width:200px;
+    height:351px;
+    background-color:#f7f7f7;
+    margin:10px 0px 10px 30px;
+    -webkit-box-shadow: #666 0px 0px  2px ;
+    -moz-box-shadow: #666 0px 0px 2px ;
+    box-shadow: #666 0px 0px 2px ;
+}
+.people_box:hover{
+    -webkit-box-shadow: #666 0px 0px 30px ;
+    -moz-box-shadow: #666 0px 0px 30px ;
+    box-shadow: #666 0px 0px 30px ;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:  0.5s;
+}
+.people_box:hover img{
+    filter: brightness(85%);
+    /*-webkit-filter: brightness(85%);
+    -moz-filter: brightness(85%);
+    -o-filter: brightness(85%);
+    -ms-filter: brightness(85%);*/
+    filter: contrast(1.2);
+    -webkit-filter: contrast(1.2);
+    -moz-filter: contrast(1.2);
+    -o-filter: contrast(1.2);
+    -ms-filter: contrast(1.2);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:  0.5s;
+}
+.box_img{
+    width:180px;
+    height:261px;
+}
+.people_box img{
+    width:180px;
+    height:261px;
+    margin-left:10px;
+    margin-top:10px;
+    filter: contrast(1);
+    -webkit-filter: contrast(1);
+    -moz-filter: contrast(1);
+    -o-filter: contrast(1);
+    -ms-filter: contrast(1);
+}
+.box_name{
+    margin-left:10px;
+    width:180px;
+    height:45px;
+    margin-top:10px;
+    /*background-color:#930;*/
+    text-align:center;
+    vertical-align:central;
+}
+.people_details{
+    width:190px;
+    height:30px;
+    text-align:right;
+    /*background-color:#930;*/
+}
+.people_details a{
+    text-decoration:none;
+    font-size:13px;
+    color:#AF6161;
+}
+#graduate{
+    width:950px;
+    height:auto;
+    margin-bottom:20px;
+    /*background-color:#06F;*/
+    display:table;
+}
+#graduate_title{
+    width:900px;
+    margin:0 auto;
+    height:70px;
+}
+#graduated{
+    width:950px;
+    height:auto;
+    margin-bottom:20px;
+    /*background-color:#06F;*/
+    display:table;
+}
+#graduated_title{
+    width:900px;
+    margin:0 auto;
+    height:70px;
+}
