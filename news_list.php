@@ -2,7 +2,7 @@
 	include_once("top_index.php");
 ?>
 <head>
-    <title><?php echo $news_ttl;?></title>
+    <title><?php echo $news_list_ttl;?></title>
     <style>
         * { margin:0; padding:0; word-break:break-all; }
         #news_list_title{
