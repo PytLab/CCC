@@ -1,19 +1,12 @@
 <?php
-	include_once("top_index.php");
+    include_once("top_index.php");
 ?>
 <head>
     <title><?php echo $news_list_ttl;?></title>
     <style>
         * { margin:0; padding:0; word-break:break-all; }
         #news_list_title{
-            width:770px;
-            height: 110px;
-            margin: 0px 0 10px 0;
-            padding: 0px 0 0 0px ;
             background:url(<?php echo $news_ttl;?>) no-repeat;
-             
-            font-weight: bold;
-            float: left;
         }
     </style>
 </head>
@@ -36,5 +29,5 @@
                 <?php include_once("footer.php");?>
             </div>
         </div>
-</body>
+    </body>
 </html>
