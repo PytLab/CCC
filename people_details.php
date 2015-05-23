@@ -12,140 +12,17 @@
         background-image:url(graph/Blog/grey.jpg);
         background-repeat:repeat;
     }
-    :hover{
-        -webkit-transition: 0.5s;
-        -moz-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition:  0.5s;
-    }
-    #people_main{
-        margin:0 auto;
-        width:950px;
-        height:auto;
-        margin-top:0px;
-        margin-bottom:20px;
-        padding:0px 0px 20px 0px;
-        background-color:#FFF;
-        -webkit-box-shadow: #999 0px 0px  5px ;
-        -moz-box-shadow: #999 0px 0px 5px ;
-        box-shadow: #999 0px 0px 5px ;
-        display:table;
-    }
     #people_title{
-        width:900px;
-        margin:0 auto;
-        height:110px;
         background-image:url(<?php echo $people_ttl;?>);
     }
-    /*photo*/
-    #details_photo{
-        float:right;
-        width:200px;
-        height:351px;
-        background-color:#ffffff;
-        margin:20px 20px 10px 10px;
-        -webkit-box-shadow: #888 0px 0px  5px ;
-        -moz-box-shadow: #888 0px 0px 5px ;
-        box-shadow: #888 0px 0px 5px ;
-    }
-    #details_photo img{
-        width:180px;
-        height:261px;
-        margin-left:10px;
-        margin-top:10px;
-        filter: contrast(1);
-        -webkit-filter: contrast(1);
-        -moz-filter: contrast(1);
-        -o-filter: contrast(1);
-        -ms-filter: contrast(1);
-    }
-    .box_name{
-        margin-left:10px;
-        width:180px;
-        height:45px;
-        margin-top:10px;
-        /*background-color:#930;*/
-        text-align:center;
-        vertical-align:central;
-    }
-    #details_type{
-        width:200px;
-        height:30px;
-        text-align:center;
-        /*background-color:#930;*/
-        color:#B16363;
-    }
-    /*Info*/
-    #details_info{
-        float:left;
-        width:650px;
-        min-height:331px;
-        height:auto;
-        background-color:#f9f9f9;
-        margin:20px 10px 10px 20px;
-        padding:10px 20px 10px 20px;
-        text-align:left;
-        font-size:14px;
-        color:#999;
-        line-height:22px;
-        -webkit-box-shadow: #888 0px 0px  5px ;
-        -moz-box-shadow: #888 0px 0px 5px ;
-        box-shadow: #888 0px 0px 5px ;
-    }
     #info_ttl{
-        width:670px;
-        height:40px;
-        /*background-color:#0FF;*/
         background-image:url(<?php echo $people_info;?>);
-        margin-bottom:10px;
-    }
-    /*Interest*/
-    #details_interest{
-        width:870px;
-        min-height:150px;
-        height:auto;
-        /*background-color:#09F;*/
-        float:left;
-        margin:15px 10px 10px 20px;
-        padding:10px 20px 10px 20px;
-        font-size:14px;
-        color:#999;
-        line-height:22px;
-        background-color:#f9f9f9;
-        -webkit-box-shadow: #888 0px 0px  5px ;
-        -moz-box-shadow: #888 0px 0px 5px ;
-        box-shadow: #888 0px 0px 5px ;
     }
     #interest_ttl{
-        width:670px;
-        height:40px;
-        /*background-color:#0FF;*/
         background-image:url(<?php echo $people_interest;?>);
-        margin-bottom:10px;
-    }
-    /*Pub*/
-    #details_pub{
-        width:870px;
-        min-height:150px;
-        height:auto;
-        /*background-color:#09F;*/
-        float:left;
-        margin:15px 10px 10px 20px;
-        padding:10px 20px 20px 20px;
-        font-size:14px;
-        color:#999;
-        line-height:22px;
-        background-color:#f9f9f9;
-        -webkit-box-shadow: #888 0px 0px  5px ;
-        -moz-box-shadow: #888 0px 0px 5px ;
-        box-shadow: #888 0px 0px 5px ;
     }
     #pub_ttl{
-        width:670px;
-        height:40px;
-        /*background-color:#0FF;*/
         background-image:url(<?php echo $people_pub;?>);
-        margin-bottom:10px;
     }
 </style>
 </head>
