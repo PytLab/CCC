@@ -35,7 +35,7 @@
     $more_contact = "More Details ->";
 
     /*新闻列表*/
-    $news_ttl = "News Items";
+    $news_list_ttl = "News Items";
     /*highlights列表*/
     $high_ttl = "Science Highlights";
     /*文章发表列表*/
