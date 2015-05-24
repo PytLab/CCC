@@ -1019,16 +1019,16 @@ margin:0 auto;
     float:right;
 }
 
-/*highlights_in_list.php & news_in_list.php & publication_in_list.php 共用*/
+/*highlights_in_list.php & news_in_list.php & publication_in_list.php & resourcefile.php 共用*/
 #page_num{
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:2px;
     background-color:#f0f0f0;
     width:720px;
     min-height:25px;
     height:auto;
     float:left;
-    margin-top:10px;
-    margin-left:0px;
-    margin-bottom:2px;
     padding:15px 25px 8px 25px;
     line-height:20px;
     -webkit-box-shadow: #666 0px 0px  2px ;
@@ -1246,4 +1246,69 @@ margin:0 auto;
 }
 .course_resource a:hover{
     color:#AD5C5C;
+}
+
+/*课程资源列表*/
+#coursefile_main{
+    margin:0 auto;
+    width:950px;
+    height:auto;
+    margin-top:0px;
+    margin-bottom:30px;
+    padding-bottom:20px;
+    background-color:#FFF;
+    -webkit-box-shadow: #999 0px 0px  5px ;
+    -moz-box-shadow: #999 0px 0px 5px ;
+    box-shadow: #999 0px 0px 5px ;
+    display:table;
+}
+#coursefile_ttl{
+    width:900px;
+    margin:0 auto;
+    margin-bottom:20px;
+    height:110px;
+}
+.resource_list{
+    background-color:#F9F9F9;
+    width:720px;
+    min-height:25px;
+    height:auto;
+    margin:0 auto;
+    margin-top:3px;
+    margin-bottom:5px;
+    padding:10px 25px 8px 25px;
+    line-height:20px;
+    -webkit-box-shadow: #999 0px 0px  2px ;
+    -moz-box-shadow: #999 0px 0px 2px ;
+    box-shadow: #999 0px 0px 2px ;
+    color:#444;
+    opacity: .8;  
+    -ms-filter: "alpha(opacity=80)"; 
+    filter: alpha(opacity=80);   
+    -khtml-opacity: .8;  
+    -moz-opacity: .8; 
+    
+}
+.resource_list:hover{
+    /*opacity: .5;  
+    -ms-filter: "alpha(opacity=50)"; 
+    filter: alpha(opacity=50);   
+    -khtml-opacity: .5;  
+    -moz-opacity: .5; */
+    -webkit-box-shadow: #666 0px 0px  12px ;
+    -moz-box-shadow: #666 0px 0px 12px ;
+    box-shadow: #666 0px 0px 12px ;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:  0.5s;
+}
+.resource_list a{
+    text-decoration:none;
+    color:#295454;
+    font-weight:600;
+    font-size:16px;
+}
+.resource_list a:hover{
+    color:#09F;
 }
