@@ -1,20 +1,5 @@
 <?php 
 switch($_GET['htgl']){
-  case "添加常见问题":
-  include("addquestion.php");
-   break;
-  case "编辑常见问题":
-  include("editquestion.php");
-   break;
-  case "查看客户反馈":
-  include("lookkhfk.php");
-   break;
-  case "添加软件试用":
-  include("addsoft.php");
-   break;
-  case "编辑软件试用":
-  include("editsoft.php");
-   break;
 case "编辑新闻":
   include("edit_news.php");
    break;
