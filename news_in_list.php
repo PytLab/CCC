@@ -48,7 +48,7 @@
             }
             
             
-            $sql_list=mysql_query("select * from tb_news order by id desc limit ".($page-1)*$pagesize.",$pagesize", $conn);
+            $sql_list=mysql_query("select * from tb_news order by id desc limit ".($page-1)*$pagesize.",".$pagesize, $conn);
             while($info_list = mysql_fetch_array($sql_list))
             { 
         ?>

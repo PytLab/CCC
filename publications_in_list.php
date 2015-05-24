@@ -20,46 +20,34 @@
             else
             {
                 if(empty($_GET[page])==true || is_numeric($_GET[page])==false)
-                {
                     $page=1;
-                }
                 else
-                {
                     $page=intval($_GET[page]);
-                }
                
                 $pagesize=16;
                
                 if($total<$pagesize)
-                {
                     $pagecount=1;
-                }
                 else
                 {
                     if($total%$pagesize==0)
-                    {
                         $pagecount=intval($total/$pagesize);
-                    }
                     else
-                    {
                         $pagecount=intval($total/$pagesize)+1;
-                    } 
                 }
             }
-            $sql_list=mysql_query("select * from tb_publication order by pub_time desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
+            $sql_list=mysql_query("select * from tb_publication order 
+            	                  by pub_time desc 
+            	                  limit ".($page-1)*$pagesize.",".$pagesize, $conn);
             while($info_list=mysql_fetch_array($sql_list))
             { 
         ?>
         <div class="pub_list">
             <?php
                 if($info_list[paper]!="")
-                {        
                     echo "<a href='".$info_list[paper]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];
-                }
                 else
-                {
-                    echo "<a href='".$info_list[link]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];    
-                }
+                    echo "<a href='".$info_list[link]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];
             ?>            
         </div>
         <?php
