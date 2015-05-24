@@ -55,8 +55,8 @@
         ?>
         <div id="page_num">
         
-            <?php echo $page;?>&nbsp;/&nbsp;<?php echo $pagecount?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
+            <a style="font-weight:lighter; hover:None;"><?php echo $page;?>&nbsp;&nbsp;/&nbsp;&nbsp;<?php echo $pagecount;?></a>
+            &nbsp;&nbsp;|
             <?php
                 if($page>=2)
                 {
