@@ -50,6 +50,12 @@
     $people = "People";
     /*联系方式*/
     $contact = "Contact";
+    /*联系人名称*/
+    $hu = "Prof. Peijun Hu";
+    $gong = "Prof. Xueqing Gong";
+    $cao = "Dr. Xiaoming Cao";
+    $wang = "Dr. Haifeng Wang";
+    $liu = "Huihui Liu";
 
     /*背景图片链接*/
     $sci_highlight = "./graph/HomePage/ttl_h3_highlights_en.gif";  //首页highlights

@@ -50,6 +50,12 @@
     $people = "研究人员";
     /*联系方式*/
     $contact = "联系方式";
+    /*联系人名称*/
+    $hu = "胡培君";
+    $gong = "龚学庆";
+    $cao = "曹宵鸣";
+    $wang = "王海丰";
+    $liu = "刘慧慧";
 
     /*背景图片链接*/
     $sci_highlight = "./graph/HomePage/ttl_h3_highlights_cn.gif";  //首页highlights
