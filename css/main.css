@@ -1312,3 +1312,35 @@ margin:0 auto;
 .resource_list a:hover{
     color:#09F;
 }
+
+/*联系人列表contact.php*/
+#course_main{
+    margin:0 auto;
+    width:950px;
+    height:auto;
+    margin-top:0px;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    background-color:#FFF;
+    -webkit-box-shadow: #999 0px 0px  5px ;
+    -moz-box-shadow: #999 0px 0px 5px ;
+    box-shadow: #999 0px 0px 5px ;
+    display:table;
+    text-align:center;
+}
+#course_title{
+    width:900px;
+    margin:0 auto;
+    height:110px;
+}
+#contact_info{
+    width:880px;
+    height:auto;
+    padding:10px;
+    margin:0 auto;
+    margin-top:20px;
+    background-color:#E9E9D1;
+    -webkit-box-shadow: #999 0px 0px  15px ;
+    -moz-box-shadow: #999 0px 0px 15px ;
+    box-shadow: #999 0px 0px 15px ;
+}
