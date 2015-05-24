@@ -1,10 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php include_once("top_index.php"); ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
-    <?php
-        include_once("top_index.php");
-    ?>
     <title><?php echo $people;?></title>
     <style>
         body{
@@ -28,6 +25,7 @@
 
     <body>
         <?php
+            /*获取研究人员数据库信息*/
             $id=$_GET[id];
             $sql=mysql_query("select * from tb_people where id = ".$id."");
             $info=mysql_fetch_array($sql); //get info from database
@@ -76,9 +74,32 @@
                 }
             ?>
               <?php
-                $sql_pub=mysql_query("select * from tb_publication where author like '%#".$info[truename]."#%' order by pub_time desc");
+                /*获取此人文章发表总数*/
+                $sql_num = mysql_query("select count(*) as total from tb_publication 
+                                       where author like '%#".$info[truename]."#%' 
+                                       order by pub_time desc");
+                $info_num = mysql_fetch_array($sql_num);
+                $total = $info_num[total];
+
+                $page_size = 2;  //一页最多显示的文章数
+                /*设置当前页面页号*/
+                if(empty($_GET[page]) || is_numeric($_GET[page]) == False)
+                    $page = 1;
+                else
+                    $page = intval($_GET[page]);
+                /*获取总页数*/
+                if($total % $page_size == 0)
+                    $page_count = intval($total/$page_size);
+                else
+                    $page_count = intval($total/$page_size) + 1;
+
+                /*获取数据库中此人的文章数据*/
+                $sql_pub=mysql_query("select * from tb_publication 
+                                     where author like '%#".$info[truename]."#%' 
+                                     order by pub_time desc 
+                                     limit ".($page-1)*$page_size.",".$page_size);
                 $info_pub=mysql_fetch_array($sql_pub);
-                if($info_pub!="")
+                if($info_pub != "")
                 {
             ?>
             <div id="details_pub">
@@ -101,8 +122,58 @@
                 </li> 
                 <br />
                 <?php
-                    }while($info_pub=mysql_fetch_array($sql_pub));
-                ?>    
+                    }while($info_pub = mysql_fetch_array($sql_pub));
+                ?>
+                <!--论文翻页-->
+                <?php
+                    /*如果所有文章能够一页显示，就不显示翻页内容*/
+                    if($total > $page_size)
+                    {
+                ?>
+                        <div id="pub_page_num">
+                            <a style="font-weight:lighter;"><?php echo $page;?>&nbsp;&nbsp;/&nbsp;&nbsp;<?php echo $page_count;?></a>
+                            <?php 
+                                if($page > 2)
+                                {
+                            ?>
+                                    <a href="people_details.php?id=<?php echo $id;?>&page=1#details_pub" title="First"><font face="webdings"> 9 </font></a> 
+                                    <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $page-1;?>#details_pub" title="Previous"><font face="webdings"> 7 </font></a>
+                            <?php
+                                }
+                                /*显示页面切换键*/
+                                if($page_count <= 4)
+                                {
+                                    for($i = 1; $i <= $page_count; $i++)
+                                    {
+                            ?>
+                                        <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $i;?>#details_pub"><?php echo $i;?></a>
+                            <?php
+                                    }
+                                }
+                                else
+                                {
+                                    for($i = 1; $i <= 4; $i++) //最多显示4个切换键
+                                    {
+                            ?>
+                                        <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $i;?>#details_pub"><?php echo $i;?></a>
+                            <?php
+                                    }
+                            ?>
+                            ...&nbsp;<a href="people_details.php?id=<?php echo $id;?>&page=<?php 
+                                if($pagecount>=$page+1)
+                                    echo $page+1;
+                                else
+                                    echo 1; 
+                                 
+                                ?>#details_pub" title="Next"> <font face="webdings"> 8 </font></a> 
+                                <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>#details_pub" title="Last"><font face="webdings"> : </font></a>
+                            <?php
+                                }
+                            ?>
+                        </div>
+                <?php
+                    }
+                ?>
             </div>
             <?php
                 }
