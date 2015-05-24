@@ -147,13 +147,13 @@
             <div class="course_info">
             	<div class="course_info_ttl"></div>
                 <div class="info_contnt">
-                	<strong>Course Name</strong>&nbsp;:&nbsp;<?php echo $info_course[name];?><br />
+                	<strong><?php echo $course_name;?></strong>&nbsp;:&nbsp;<?php echo $info_course[name];?><br />
                     <br />
-                    <strong>Introduction</strong>&nbsp;:&nbsp;<?php echo $info_course[info];?>
+                    <strong><?php echo $course_intro;?></strong>&nbsp;:&nbsp;<?php echo $info_course[info];?>
                 </div>
             </div>
             <div class="course_resource">
-            	<a href="course_login?courseid=<?php echo $info_course[id]?>">Course Resources -></a>
+            	<a href="course_login?courseid=<?php echo $info_course[id]?>"><?php echo $get_res;?> -></a>
             </div>
         </div>
         <?php

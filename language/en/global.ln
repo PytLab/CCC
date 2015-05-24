@@ -43,6 +43,9 @@
     /*课程列表*/
     $course_ttl = "Courses";
     $course_file = "Resource Download";
+    $course_name = "Course Name";
+    $course_intro = "Introduction";
+    $get_res = "Course Resources";
     /*研究人员*/
     $people = "People";
     /*联系方式*/

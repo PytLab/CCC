@@ -81,7 +81,7 @@
                 $info_num = mysql_fetch_array($sql_num);
                 $total = $info_num[total];
 
-                $page_size = 2;  //一页最多显示的文章数
+                $page_size = 10;  //一页最多显示的文章数
                 /*设置当前页面页号*/
                 if(empty($_GET[page]) || is_numeric($_GET[page]) == False)
                     $page = 1;

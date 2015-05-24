@@ -43,6 +43,9 @@
     /*课程列表*/
     $course_ttl = "教学课程";
     $course_file = "资源下载";
+    $course_name = "课程名称";
+    $course_intro = "课程简介";
+    $get_res = "课程资源";
     /*研究人员*/
     $people = "研究人员";
     /*联系方式*/
