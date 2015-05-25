@@ -2,6 +2,7 @@
     header ( "Content-type: text/html; charset=utf8" ); //设置文件编码格式
     include_once("../conn/conn.php");
     date_default_timezone_set(PRC);
+    include_once("./chk_upload.php");
     $name=$_POST[name];
     $info=$_POST[info];
     $teacher=$_POST[teacher];
@@ -19,8 +20,10 @@
         {
             $paths1=$_FILES["photo"]["name"];        //创建图片名称    
             $photos="../graph/courses/pic/".$paths1; //创建图片的存储路径
-	          $photo="graph/courses/pic/".$paths1;     //存入数据库的图片的显示路径
-            move_uploaded_file($_FILES["photo"]["tmp_name"],$photos);                      //将图片存储到指定的文件夹下
+            $photo="graph/courses/pic/".$paths1;     //存入数据库的图片的显示路径
+            move_uploaded_file($_FILES["photo"]["tmp_name"],$photos);  //将图片存储到指定的文件夹下
+            /*检测文件上传结果*/
+            chk_upload($_FILES["photo"]["error"]);  
         }
     }
     $query=mysql_query("insert into tb_course(name,info,teacher,pic,createtime) values('$name','$info','$teacher','$photo','$addtime')",$conn);
