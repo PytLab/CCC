@@ -1,6 +1,7 @@
 <?php
     header ( "Content-type: text/html; charset=utf8" ); 
     include_once("../conn/conn.php");
+    include_once("./chk_upload.php");
     date_default_timezone_set(PRC);
     $name=$_POST[name];
     $info=$_POST[info];
@@ -19,17 +20,19 @@
         {
             $paths1=$_FILES["photo"]["name"];                               
             $photos="../graph/courses/pic/".$paths1;                                                       
-        	$photo="graph/courses/pic/".$paths1;
-            move_uploaded_file($_FILES["photo"]["tmp_name"],$photos);                      
+            $photo="graph/courses/pic/".$paths1;
+            move_uploaded_file($_FILES["photo"]["tmp_name"],$photos);
+            /*检测文件上传结果*/
+            chk_upload($_FILES["photo"]["error"]);                    
         }
     }  
     if($_FILES["photo"]["name"]==true)
-	{
-	    $query=mysql_query("update tb_course set name='$name',info='$info',teacher='$teacher',edittime='$addtime',pic='$photo' where id='".$id."'",$conn);
-	    if($query==true)
+    {
+        $query=mysql_query("update tb_course set name='$name',info='$info',teacher='$teacher',edittime='$addtime',pic='$photo' where id='".$id."'",$conn);
+        if($query==true)
         { 
-	        echo "<script>alert('Course edit successfully!');history.back();</script>";
-	    }
+            echo "<script>alert('Course edit successfully!');history.back();</script>";
+        }
         else
         {
             echo "<script>alert('Failed to edit!');history.back();</script>";
@@ -37,14 +40,14 @@
     }
     else
     {
-    	$query=mysql_query("update tb_course set name='$name',info='$info',teacher='$teacher',edittime='$addtime' where id='".$id."'",$conn);
-    	 if($query==true){ 
-    	   echo "<script>alert('Course edit successfully!');history.back();</script>";
-    	
-    	}else{
-    	   
-    	   echo "<script>alert('Failed to edit!');history.back();</script>";
-    	
-    	}
+        $query=mysql_query("update tb_course set name='$name',info='$info',teacher='$teacher',edittime='$addtime' where id='".$id."'",$conn);
+         if($query==true){ 
+           echo "<script>alert('Course edit successfully!');history.back();</script>";
+        
+        }else{
+           
+           echo "<script>alert('Failed to edit!');history.back();</script>";
+        
+        }
     }
 ?>
