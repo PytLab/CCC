@@ -9,6 +9,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta name="renderer" content="webkit" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="./css/main.css" rel="stylesheet" type="text/css" />
 <style>

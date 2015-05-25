@@ -10,6 +10,8 @@
         include_once("./change_language.php");  //通过点击链接切换语言
     ?>
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
     <link href="./css/main.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="icon.ico" />
     </head>
