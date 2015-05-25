@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="course_resource">
-                    <a href="course_login?courseid=<?php echo $info_course[id]?>"><?php echo $get_res;?> →</a>
+                    <a href="course_login.php?courseid=<?php echo $info_course[id]?>"><?php echo $get_res;?> →</a>
                 </div>
             </div>
             <?php
@@ -64,7 +64,7 @@
             ?>
         </div>
         <div id="foot">
-                <?php include_once("footer.php");?>
+            <?php include_once("footer.php");?>
         </div>
     </body>
 </html>
