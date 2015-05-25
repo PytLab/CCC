@@ -58,6 +58,10 @@
 		color:#002C57;
 		/*background-color:#09C;*/
 	}
+	#invit_contnt img{
+		width: auto;
+		max-width: 765px;
+	}
 </style>
 </head>
 

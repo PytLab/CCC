@@ -6,9 +6,10 @@
 <style>
 	#inside_main{
 		width:835px;
-		
+
 	}
 	.accom{
+        font-family:"Microsoft YaHei";
 		width:780px;
 		min-height:400px;
 		height:auto;
@@ -31,7 +32,7 @@
 		/*background-color:#930;*/
 	}
 	.hotel_pic img{
-		width:770px;
+		width:780px;
 		height:auto;
 	}
 	.hotel_info{
@@ -44,6 +45,10 @@
 		padding:15px;
 		text-align:left;
 	}
+    .hotel_info img{
+        width: auto;
+        max-width: 750px;
+    }
 </style>
 </head>
 
