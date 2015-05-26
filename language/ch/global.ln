@@ -29,10 +29,10 @@
     $get_lang = "en";  //get的传值
 
     /*右侧边栏*/
-    $more_high = "更多亮点 ->";
-    $more_news = "更多新闻 ->";
-    $more_pub = "更多发表 ->";
-    $more_contact = "更多信息 ->";
+    $more_high = "更多亮点 →";
+    $more_news = "更多新闻 →";
+    $more_pub = "更多发表 →";
+    $more_contact = "更多信息 →";
 
     /*新闻列表*/
     $news_list_ttl = "中心新闻";

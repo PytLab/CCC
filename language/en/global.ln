@@ -29,10 +29,10 @@
     $get_lang = "cn";  //get的传值
 
     /*右侧边栏*/
-    $more_high = "More Highlights ->";
-    $more_news = "More News ->";
-    $more_pub = "More Publications ->";
-    $more_contact = "More Details ->";
+    $more_high = "More Highlights →";
+    $more_news = "More News →";
+    $more_pub = "More Publications →";
+    $more_contact = "More Details →";
 
     /*新闻列表*/
     $news_list_ttl = "News Items";
