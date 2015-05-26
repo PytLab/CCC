@@ -610,14 +610,14 @@ var isDigit = function(obj, starVal, s, t) {
 /* 表单检查 */
 function writeChk() {
   //主题检查
-  var s = document.mainform162100.subject;
+  /*var s = document.mainform162100.subject;
   if (s != null) {
     if (s.value == '') {
       alert('请填写标题！！！');
       s.focus();
       return false;
     }
-  }
+  }*/
   //验证码检查
   var i = document.mainform162100.imcode;
   if (i != null) {
