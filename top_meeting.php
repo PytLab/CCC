@@ -12,6 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
+        <link href="./css/meeting.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="icon.ico" />
         <style>
         	#head_bottom_meeting{

@@ -8,14 +8,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Meeting - CCC</title>
-        <style>
-          #main_table{
-            margin:0 auto;
-            -webkit-box-shadow: #666 0px 0px 20px;
-            -moz-box-shadow: #666 0px 0px 20px;
-            box-shadow: #666 0px 0px 20px;
-          }
-        </style>
     </head>
 
     <body>

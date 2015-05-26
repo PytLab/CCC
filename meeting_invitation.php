@@ -3,64 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <style>
-            #inside_main{
-                width:835px;
-                
-            }
-            #meeting_pic{
-                margin:0 auto;
-                width:830px;
-                height:460px;
-                margin-top:15px;
-                margin-bottom:10px;
-                -webkit-box-shadow: #666 0px 0px  5px ;
-                -moz-box-shadow: #666 0px 0px 5px ;
-                box-shadow: #666 0px 0px 5px ;
-                
-            }
-            #meeting_pic img{
-                width:820px;
-                height:450px;
-                margin:5px 5px 5px 5px;
-            }
-            #invit{
-                width:825px;
-                min-height:200px;
-                height:auto;
-                background-color:#E3E3C8;
-                float:left;
-                margin:15px 10px 10px 5px ;
-                -webkit-box-shadow: #666 0px 0px  5px ;
-                -moz-box-shadow: #666 0px 0px 5px ;
-                box-shadow: #666 0px 0px 5px ;
-            }
-            #invit_ttl{
-                width:790px;
-                min-height:20px;
-                height:auto;
-                padding:20px 0px 10px 0px;
-                /*background-color:#CCC;*/
-                text-align:center;
-                color:#AB5656;
-                font-size:24px;
-                margin:0 auto;
-                border-bottom:1px #ACACAC solid;
-                
-            }
-            #invit_contnt{
-                margin:0 auto;
-                width:790px;
-                min-height:150px;
-                height:auto;
-                padding:20px 30px 40px 30px;
-                text-align:left;
-                color:#002C57;
-                /*background-color:#09C;*/
-            }
-            #invit_contnt img{
-                width: auto;
-                max-width: 765px;
-            }
+            
         </style>
     </head>
 

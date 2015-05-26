@@ -3,51 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <style>
-            #inside_main{
-                width:835px;
-
-            }
-            .accom{
-                font-family:"Microsoft YaHei";
-                width:780px;
-                min-height:400px;
-                height:auto;
-                background-color:#f9f9f9;
-                float:left;
-                padding:10px;
-                margin:10px 10px 10px 20px ;
-                -webkit-box-shadow: #666 0px 0px  5px ;
-                -moz-box-shadow: #666 0px 0px 5px ;
-                box-shadow: #666 0px 0px 5px ;
-            }
             
-            
-            .hotel_pic{
-                width:770px;
-                height:auto;
-                /*float:left;*/
-                margin:0 auto;
-                margin:10px 20px 10px 0px;
-                /*background-color:#930;*/
-            }
-            .hotel_pic img{
-                width:780px;
-                height:auto;
-            }
-            .hotel_info{
-                width:770px;
-                /*min-height:250px;*/
-                height:auto;
-                /*background-color:#096;*/
-                /*float:right;*/
-                margin:0 auto;
-                padding:15px;
-                text-align:left;
-            }
-            .hotel_info img{
-                width: auto;
-                max-width: 750px;
-            }
         </style>
     </head>
 

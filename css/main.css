@@ -1231,7 +1231,9 @@ margin:0 auto;
     margin:15px 10px;
     color:#666;
     line-height:23px;
+    text-align: left;
 }
+
 .course_resource{
     width:600px;
     height:30px;
