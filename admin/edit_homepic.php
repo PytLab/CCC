@@ -22,7 +22,7 @@
                     form.title.focus();
                     return(false);
                 }
-              
+
                 if(form.info.value=="")
                 {
                     alert("Please input Text");
