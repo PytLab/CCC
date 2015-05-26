@@ -7,7 +7,7 @@
     $home = "Home";
     $people = "People";
     /*in people*/
-    $teachers = "Research Stuff";
+    $teachers = "Research Staff";
     $graduates = "Currnet Group Members";
     $graduated = "Previous Group Members";
 
