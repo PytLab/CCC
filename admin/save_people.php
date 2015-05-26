@@ -19,7 +19,7 @@
 
         else
     	{
-            $paths1=$name.strstr($_FILES["photo"]["name"],".");                                
+            $paths1=$truename.strstr($_FILES["photo"]["name"],".");                                
             $photos="../graph/People/".$paths1;  //相对此文件的路径                                                
     	    $photo="graph/People/".$paths1;  //存到数据库的路径(显示路径)
             move_uploaded_file($_FILES["photo"]["tmp_name"],$photos);
