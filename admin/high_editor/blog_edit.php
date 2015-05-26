@@ -75,16 +75,16 @@ if($_SESSION["admin_nc"]=="")
 		display:table;
 	}
 	#right_top{
-	width:196px;
-	height:40px;
-	bottom:0px;
-	left:0px;
-	position:fixed;
-	_position:absolute;
-	line-height:30px;
-	text-align:center;
-	cursor:pointer;
-	/*background-color:#FFF;*/
+		width:196px;
+		height:40px;
+		bottom:0px;
+		left:0px;
+		position:fixed;
+		_position:absolute;
+		line-height:30px;
+		text-align:center;
+		cursor:pointer;
+		/*background-color:#FFF;*/
 	}
 	#return_index{
 		float:right;
@@ -97,10 +97,10 @@ if($_SESSION["admin_nc"]=="")
 		border-radius: 2px;
 		font-size:14px;
 		color:#999;
-		filter: 		progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=45); -moz-opacity: 0.30; opacity: 0.3; -khtml-opacity: 0.30;
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=45); -moz-opacity: 0.30; opacity: 0.3; -khtml-opacity: 0.30;
 	}
 	#return_index:hover{
-		filter: 		progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=85); -moz-opacity: 0.80; opacity: 0.8; -khtml-opacity: 0.85;
+		filter: progid:DXImageTransform.Microsoft.Shadow(color=#CACACA,direction=135,strength=4) alpha(opacity=85); -moz-opacity: 0.80; opacity: 0.8; -khtml-opacity: 0.85;
 	}
 	select{
 		color:#999;

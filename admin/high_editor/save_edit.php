@@ -11,7 +11,7 @@ $blog_title=filter2($_POST['subject']);
 include_once("../../conn/conn.php");		//连接数据库
 $author_name=$_SESSION["unc"];
 $edittime=date("Y-m-j H:i:s");
-if(mysql_query("update tb_highlights set content='".$blog_content."',title='".$blog_title."',author='".$author_name."' where id='".$blog_id."'",$conn))
+if(mysql_query("update tb_news set content='".$blog_content."',title='".$blog_title."',author='".$author_name."' where id='".$blog_id."'",$conn))
  {
  echo "<script>alert('修改成功!');window.history.go(-2);</script>";
  mysql_close($conn);
