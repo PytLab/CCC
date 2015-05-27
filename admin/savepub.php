@@ -12,7 +12,7 @@
     $link=date("YmjHis");
     if($_FILES["paper"]["name"]==true)
     {
-        $path=$link.strstr($_FILES["paper"]["name"],".");//rename file
+        $path=$_FILES["paper"]["name"];//rename file
         $address="../upfile/pub/".$path;
         
         move_uploaded_file($_FILES["paper"]["tmp_name"],$address);
