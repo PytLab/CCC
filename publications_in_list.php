@@ -45,9 +45,9 @@
         <div class="pub_list">
             <?php
                 if($info_list[paper]!="")
-                    echo "<a href='".$info_list[paper]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];
+                    echo "<a href='".$info_list[paper]."' target='_blank'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];
                 else
-                    echo "<a href='".$info_list[link]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];
+                    echo "<a href='".$info_list[link]."' target='_blank'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[pub_time];
             ?>            
         </div>
         <?php
