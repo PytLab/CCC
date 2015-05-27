@@ -71,7 +71,7 @@
                 <td width="77" bgcolor="#F7F7F7"><div align="center">删除</div></td>
             </tr>
                 <?php
-                    $sql=mysql_query("select * from tb_publication order by id desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
+                    $sql=mysql_query("select * from tb_publication order by pub_time desc limit ".($page-1)*$pagesize.",$pagesize",$conn);
                     while($info=mysql_fetch_array($sql))
                     {      
                 ?>    
