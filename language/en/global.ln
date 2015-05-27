@@ -1,7 +1,7 @@
 <?php
     $title = "Home - CCC";
     $charset = "UTF-8";
-    $intro = " The Cambridge University Centre for Computational Chemistry groups theoretically-minded members of the Cambridge Department of Chemistry in premises on the recently refurbished third floor of the Department. Around 50 members, comprising staff, research fellows, postdoctoral associates, postgraduate students, and visiting scientists from all over the world, work on many aspects of theoretical and computational chemistry.";
+    $intro = "In September 2013, <strong>the Centre for Computational Chemistry</strong>, approved by the East China Iniversity of Science and Technology was formally established, with the \"Thousand talents program\" distinguished professor, member of the Royal Academy of sciences in Ireland Hu Peijun professor as the core, with young teachers as the backbone. <br/>At present, the team has a total of 5 teachers, 25 graduate students, 2 professors, 2 associate professors, 1 engineer, 15 PhD candidates and 10 reading masters. The center has a 320 m<sup>2</sup> of office space, 1 self-built computer room with computing hardware equipment needed for research work, and also relies on the school and the national super computing platform. The center has built six sets of high performance computer group with a total of 800 independent multicore cpus, and the total general floating-point computing capacity has reached 12 trillion times.";
 
     /*首页菜单栏*/
     $home = "Home";
