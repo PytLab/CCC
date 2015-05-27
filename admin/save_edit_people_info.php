@@ -16,7 +16,7 @@
             echo "<script>alert('Format is not correct!');history.back();</script>";
         else
         {
-            $paths1=$name.strstr($_FILES["photo"]["name"],".");                               
+            $paths1=$truename.strstr($_FILES["photo"]["name"],".");                               
             $photos="../graph/People/".$paths1;                                                       
             $photo="./graph/People/".$paths1;
             move_uploaded_file($_FILES["photo"]["tmp_name"],$photos);
@@ -26,7 +26,7 @@
     }
     if($_FILES["photo"]["name"]==true)
     {
-        $query=mysql_query("update tb_people set name='$name',truename='$truename',Info='$info',people_type='$type',edittime='$addtime',photo='$photo' where id='".$id."'",$conn);
+        $query=mysql_query("update tb_people set name='$name',truename='$truename',people_type='$type',edittime='$addtime',photo='$photo' where id='".$id."'",$conn);
         if($query==true)
             echo "<script>alert('People_Info修改成功！');history.back();</script>";
         else
@@ -34,7 +34,7 @@
     }
     else
     {
-        $query=mysql_query("update tb_people set name='$name',truename='$truename',Info='$info',people_type='$type',edittime='$addtime' where id='".$id."'",$conn);
+        $query=mysql_query("update tb_people set name='$name',truename='$truename',people_type='$type',edittime='$addtime' where id='".$id."'",$conn);
         if($query==true)
             echo "<script>alert('People_Info修改成功！');history.back();</script>";
         else
