@@ -62,8 +62,8 @@ if($_SESSION["admin_nc"]=="")
           <td width="564" bgcolor="#FFFFFF">&nbsp;
           	<select name="type" class="search_select">
                <option value="0" <?php if($info[people_type]==0){echo "selected";}?>>Research_Staff</option>
-               <option value="1" <?php if($info[people_type]==1){echo "selected";}?>>Graduate_Student</option>
-               <option value="2" <?php if($info[people_type]==2){echo "selected";}?>>UndergraduateStudent</option>
+               <option value="1" <?php if($info[people_type]==1){echo "selected";}?>>Currnet Group Member</option>
+               <option value="2" <?php if($info[people_type]==2){echo "selected";}?>>Previous Group Member</option>
             </select>
           </td>
         </tr>
