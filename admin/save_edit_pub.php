@@ -18,7 +18,7 @@
         
         move_uploaded_file($_FILES["paper"]["tmp_name"],$address);
         /*检测文件上传结果*/
-        chk_upload($_FILES["photo"]["error"]);  
+        chk_upload($_FILES["paper"]["error"]);  
         
         $address_in_db="./upfile/pub/".$path;
     }
