@@ -161,13 +161,13 @@
                                     }
                             ?>
                             ...&nbsp;<a href="people_details.php?id=<?php echo $id;?>&page=<?php 
-                                if($pagecount>=$page+1)
+                                if($page_count>=$page+1)
                                     echo $page+1;
                                 else
                                     echo 1; 
                                  
                                 ?>#details_pub" title="Next"> <font face="webdings"> 8 </font></a> 
-                                <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $pagecount;?>#details_pub" title="Last"><font face="webdings"> : </font></a>
+                                <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $page_count;?>#details_pub" title="Last"><font face="webdings"> : </font></a>
                             <?php
                                 }
                             ?>

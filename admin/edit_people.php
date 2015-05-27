@@ -20,7 +20,7 @@ if($_SESSION["admin_nc"]=="")
 	   <?php
 	  include_once("../conn/conn.php");
 	  include_once("function.php");  
-	  $sql=mysql_query("select count(*) as total from tb_publication",$conn);
+	  $sql=mysql_query("select count(*) as total from tb_people",$conn);
 	  $info=mysql_fetch_array($sql);
 	  $total=$info[total];
 	 if($total==0)
