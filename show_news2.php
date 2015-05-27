@@ -34,7 +34,7 @@
                 do{        
         ?>
             
-            <a href="news_look?id=<?php echo $info[id]?>" title="<?php echo $info[title]?>">
+            <a href="news_look.php?id=<?php echo $info[id]?>" title="<?php echo $info[title]?>">
             <li>
                 <span class="affices_title">
                     <?php 
