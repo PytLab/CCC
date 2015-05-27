@@ -63,7 +63,7 @@
             <div id="graduate">
                 
                 <?php
-                    $sql_grad=mysql_query("select * from tb_people where people_type = 1 order by id");
+                    $sql_grad=mysql_query("select * from tb_people where people_type = 1 order by truename");
                     $info_grad=mysql_fetch_array($sql_grad); //get staff info from database
                     if($info_grad!="")
                     {
@@ -93,7 +93,7 @@
             <div id="graduated">
                 
                 <?php
-                    $sql_ugrad=mysql_query("select * from tb_people where people_type = 2 order by id");
+                    $sql_ugrad=mysql_query("select * from tb_people where people_type = 2 order by truename");
                     $info_ugrad=mysql_fetch_array($sql_ugrad); //get staff info from database
                     if($info_ugrad!="")
                     {
