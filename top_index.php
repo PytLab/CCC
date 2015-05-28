@@ -38,15 +38,15 @@
                                     <li><a href="people#graduated" ><?php echo $graduated?></a></li>
                                 </ul>
                             </li>
-                            <li><a href="news_list" ><?php echo $news?></a></li>
-                            <li><a href="highlights_list" ><?php echo $highlights?></a>
+                            <li><a href="news" ><?php echo $news?></a></li>
+                            <li><a href="highlights" ><?php echo $highlights?></a>
                                 <ul class="sub_menu">
                                     <li><a href="highlights_detail" ><?php echo $latest?></a></li>
-                                    <li><a href="highlights_list" ><?php echo $high_list?></a></li>
+                                    <li><a href="highlights" ><?php echo $high_list?></a></li>
                                 </ul>
                             </li>
-                            <li><a href="publications_list" ><?php echo $pubs?></a></li>
-                            <li><a href="course_list" ><?php echo $courses?></a>
+                            <li><a href="publications" ><?php echo $pubs?></a></li>
+                            <li><a href="course" ><?php echo $courses?></a>
                                 <ul class="sub_menu">
                                     <?php
                                         $sql_acc=mysql_query("select * from tb_user where usernc = '".$_SESSION["unc"]."'");
@@ -54,7 +54,7 @@
                                         if($info_acc!="")
                                         {
                                     ?>
-                                    <li><a href="course_list" ><?php echo $course_list?></a></li>
+                                    <li><a href="course" ><?php echo $course_list?></a></li>
                                     <li><a href="course_login_<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
                                     <?php
                                         }
