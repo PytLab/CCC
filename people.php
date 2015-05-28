@@ -1,4 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
     <link rel="shortcut icon" href="icon.ico" />
@@ -45,14 +44,14 @@
                         {
                 ?>
                 <div class="people_box">
-                    <a href="people_details.php?id=<?php echo $info_staff[id];?>">
+                    <a href="people_details?id=<?php echo $info_staff[id];?>">
                         <img src="<?php echo $info_staff[photo];?>" alt="<?php echo $info_staff[name];?>"/>
                     </a>
                     <div class="box_name">
                         <?php echo $info_staff[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details.php?id=<?php echo $info_staff[id];?>">Details -></a>
+                        <a href="people_details?id=<?php echo $info_staff[id];?>">Details -></a>
                     </div>
                 </div>
                 <?php
@@ -74,14 +73,14 @@
                         {
                 ?>
                 <div class="people_box">
-                    <a href="people_details.php?id=<?php echo $info_grad[id];?>">
+                    <a href="people_details?id=<?php echo $info_grad[id];?>">
                         <img src="<?php echo $info_grad[photo];?>" alt="<?php echo $info_grad[name];?>" />
                     </a>
                     <div class="box_name">
                         <?php echo $info_grad[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details.php?id=<?php echo $info_grad[id];?>">Details -></a>
+                        <a href="people_details?id=<?php echo $info_grad[id];?>">Details -></a>
                     </div>
                 </div>
                 <?php
@@ -104,14 +103,14 @@
                         {
                 ?>
                 <div class="people_box">
-                    <a href="people_details.php?id=<?php echo $info_ugrad[id];?>">
+                    <a href="people_details?id=<?php echo $info_ugrad[id];?>">
                         <img src="<?php echo $info_ugrad[photo];?>" alt="<?php echo $info_ugrad[name];?>" />
                     </a>
                     <div class="box_name">
                         <?php echo $info_ugrad[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details.php?id=<?php echo $info_ugrad[id];?>">Details -></a>
+                        <a href="people_details?id=<?php echo $info_ugrad[id];?>">Details -></a>
                     </div>
                 </div>
                 <?php

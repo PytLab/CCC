@@ -137,8 +137,8 @@
                                 if($page > 2)
                                 {
                             ?>
-                                    <a href="people_details.php?id=<?php echo $id;?>&page=1#details_pub" title="First"><font face="webdings"> 9 </font></a> 
-                                    <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $page-1;?>#details_pub" title="Previous"><font face="webdings"> 7 </font></a>
+                                    <a href="people_details?id=<?php echo $id;?>&page=1#details_pub" title="First"><font face="webdings"> 9 </font></a> 
+                                    <a href="people_details?id=<?php echo $id;?>&page=<?php echo $page-1;?>#details_pub" title="Previous"><font face="webdings"> 7 </font></a>
                             <?php
                                 }
                                 /*显示页面切换键*/
@@ -147,7 +147,7 @@
                                     for($i = 1; $i <= $page_count; $i++)
                                     {
                             ?>
-                                        <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $i;?>#details_pub"><?php echo $i;?></a>
+                                        <a href="people_details?id=<?php echo $id;?>&page=<?php echo $i;?>#details_pub"><?php echo $i;?></a>
                             <?php
                                     }
                                 }
@@ -156,18 +156,18 @@
                                     for($i = 1; $i <= 4; $i++) //最多显示4个切换键
                                     {
                             ?>
-                                        <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $i;?>#details_pub"><?php echo $i;?></a>
+                                        <a href="people_details?id=<?php echo $id;?>&page=<?php echo $i;?>#details_pub"><?php echo $i;?></a>
                             <?php
                                     }
                             ?>
-                            ...&nbsp;<a href="people_details.php?id=<?php echo $id;?>&page=<?php 
+                            ...&nbsp;<a href="people_details?id=<?php echo $id;?>&page=<?php 
                                 if($page_count>=$page+1)
                                     echo $page+1;
                                 else
                                     echo 1; 
                                  
                                 ?>#details_pub" title="Next"> <font face="webdings"> 8 </font></a> 
-                                <a href="people_details.php?id=<?php echo $id;?>&page=<?php echo $page_count;?>#details_pub" title="Last"><font face="webdings"> : </font></a>
+                                <a href="people_details?id=<?php echo $id;?>&page=<?php echo $page_count;?>#details_pub" title="Last"><font face="webdings"> : </font></a>
                             <?php
                                 }
                             ?>
