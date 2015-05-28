@@ -4,25 +4,25 @@ rewriteRule ^home$ index.php
 
 rewriteRule ^people$ people.php
 rewriteRule ^people#([a-zA-Z_]+)$ people.php#$1
-rewriteRule ^people_details?id=([0-9]+)$ people_details.php?id=$1
-rewriteRule ^people_details?id=([0-9]+)&page=([0-9]+)$ people_details.php?id=$1&page=$2
-rewriteRule ^people_details?id=([0-9]+)&page=([0-9]+)#([a-zA-Z_]+)$ people_details.php?id=$1&page=$2#$3
+rewriteRule ^people_details_([0-9]+)$ people_details.php?id=$1
+rewriteRule ^people_details_([0-9]+)&([0-9]+)$ people_details.php?id=$1&page=$2
+rewriteRule ^people_details_([0-9]+)&([0-9]+)#([a-zA-Z_]+)$ people_details.php?id=$1&page=$2#$3
 
 rewriteRule ^news_list$ news_list.php
-rewriteRule ^news_list?page=([0-9]+)$ news_list.php?page=$1
-rewriteRule ^news_look?id=([0-9]+)$ news_look.php?id=$1
+rewriteRule ^news_list_([0-9]+)$ news_list.php?page=$1
+rewriteRule ^news_look_([0-9]+)$ news_look.php?id=$1
 
 rewriteRule ^highlights_list$ highlights_list.php
 rewriteRule ^highlights_detail$ highlights_detail.php
-rewriteRule ^highlights_list?page=([0-9]+)$ highlights_list.php?page=$1
-rewriteRule ^highlights_look?id=([0-9]+)$ highlights_look.php?id=$1
+rewriteRule ^highlights_list_([0-9]+)$ highlights_list.php?page=$1
+rewriteRule ^highlights_look_([0-9]+)$ highlights_look.php?id=$1
 
 rewriteRule ^publications_list$ publications_list.php
-rewriteRule ^publications_list?page=([0-9]+)$ publications_list.php?page=$1
+rewriteRule ^publications_list_([0-9]+)$ publications_list.php?page=$1
 
 rewriteRule ^course_list$ course_list.php
-rewriteRule ^course_list?page=([0-9]+)$ course_list.php?page=$1
-rewriteRule ^course_login?courseid=([0-9]+)$ course_login.php?courseid=$1
+rewriteRule ^course_list_([0-9]+)$ course_list.php?page=$1
+rewriteRule ^course_login_([0-9]+)$ course_login.php?courseid=$1
 
 rewriteRule ^meeting$ meeting.php
 rewriteRule ^meeting([a-zA-Z]+)$ meeting.php?szj=$1
