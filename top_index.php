@@ -55,7 +55,7 @@
                                         {
                                     ?>
                                     <li><a href="course_list" ><?php echo $course_list?></a></li>
-                                    <li><a href="course_login?courseid=<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
+                                    <li><a href="course_login_<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
                                     <?php
                                         }
                                         else

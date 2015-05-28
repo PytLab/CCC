@@ -38,7 +38,7 @@
                         <?php
                             $sql_teach=mysql_query("select * from tb_people where truename='".$info_course[teacher]."'");
                             $info_teach=mysql_fetch_array($sql_teach);//get teahcer info
-                            echo "<font color=\"#CCCCCC\">teached by </font><a href='people_details.php?id=".$info_teach[id]."'>".$info_teach[name]."</a>";
+                            echo "<font color=\"#CCCCCC\">teached by </font><a href='people_details_".$info_teach[id]."'>".$info_teach[name]."</a>";
                         ?>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="course_resource">
-                    <a href="course_login.php?courseid=<?php echo $info_course[id]?>"><?php echo $get_res;?> →</a>
+                    <a href="course_login_<?php echo $info_course[id]?>"><?php echo $get_res;?> →</a>
                 </div>
             </div>
             <?php

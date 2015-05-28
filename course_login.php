@@ -109,7 +109,7 @@
                    </li>
                    <div class="button_change_quit">
                         <li>
-                            <span><a href="logout.php" class="logout">Logout</a></span>
+                            <span><a href="logout" class="logout">Logout</a></span>
                         </li>
                         <li>
                             <span>&nbsp;</span>
@@ -117,7 +117,7 @@
                    </div>
                 </ul>
                 <div id="btn_go">
-                    <a href="coursefile.php?courseid=<?php echo $courseid;?>">
+                    <a href="coursefile_<?php echo $courseid;?>">
                         Resources->
                     </a>
                 </div>

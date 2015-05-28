@@ -23,6 +23,10 @@ rewriteRule ^publications_list_([0-9]+)$ publications_list.php?page=$1
 rewriteRule ^course_list$ course_list.php
 rewriteRule ^course_list_([0-9]+)$ course_list.php?page=$1
 rewriteRule ^course_login_([0-9]+)$ course_login.php?courseid=$1
+rewriteRule ^coursefile_([0-9]+)$ coursefile.php?courseid=$1
+rewriteRule ^coursefile_([0-9]+)&([0-9]+)$ coursefile.php?courseid=$1&page=$2
+rewriteRule ^resource_look_([0-9]+)$ resource_look.php?id=$1
+rewriteRule ^logout$ logout.php
 
 rewriteRule ^meeting$ meeting.php
 rewriteRule ^meeting([a-zA-Z]+)$ meeting.php?szj=$1
