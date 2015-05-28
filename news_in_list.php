@@ -54,7 +54,7 @@
         ?>
         <div class="news_list">
             <?php
-                echo "<a href='news_look.php?id=".$info_list[id]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[createtime];
+                echo "<a href='news_look_".$info_list[id]."'>".$info_list[title]."</a>&nbsp;-&nbsp;".$info_list[createtime];
             ?>            
         </div>
         <?php
@@ -68,8 +68,8 @@
                 if($page >= 2)
                 {
             ?>
-            <a href="news_list.php?page=1" title="First"><font face="webdings"> 9 </font></a> 
-            <a href="news_list.php?page=<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
+            <a href="news_list_1" title="First"><font face="webdings"> 9 </font></a> 
+            <a href="news_list_<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
             <?php
                 }
                 if($pagecount<=4)
@@ -77,7 +77,7 @@
                     for($i=1; $i<=$pagecount; $i++)
                     {
             ?>
-            <a href="news_list.php?page=<?php echo $i;?>"><?php echo $i;?></a>
+            <a href="news_list_<?php echo $i;?>"><?php echo $i;?></a>
             <?php
                     }
                 }
@@ -86,19 +86,19 @@
                     for($i=1;$i<=4;$i++)
                     {     
             ?>
-            <a href="news_list.php?page=<?php echo $i;?>"><?php echo $i;?></a>
+            <a href="news_list_<?php echo $i;?>"><?php echo $i;?></a>
             <?php 
                     }
             ?>
             ...&nbsp;  <!--显示下一页图标-->
-            <a href="news_list.php?page=<?php 
+            <a href="news_list_<?php 
                                             if($pagecount>=$page+1)
                                                 echo $page+1;
                                             else
                                                 echo 1; 
              
                                         ?>" title="Next"> <font face="webdings"> 8 </font></a>
-            <a href="news_list.php?page=<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
+            <a href="news_list_<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
             <?php 
                 }
             ?>
