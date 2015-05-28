@@ -23,30 +23,30 @@
                     <div id="search">
                         <?php include_once("search_inweb.html");?>
                     </div>
-                    <div id="logo"><a href="index.php"></a></div>
+                    <div id="logo"><a href="home"></a></div>
                 </div>
                 <div id="head_bottom">
                     <div id="head_nav">
                         <ul id="menu">
-                            <li><a href="index.php" ><?php echo $home?></a>
+                            <li><a href="home" ><?php echo $home?></a>
                                 <ul class="sub_menu"></ul>
                             </li>
-                            <li><a href="people.php" ><?php echo $people?></a>
+                            <li><a href="people" ><?php echo $people?></a>
                                 <ul class="sub_menu">
-                                    <li><a href="people.php#research_staff" ><?php echo $teachers?></a></li>
-                                    <li><a href="people.php#graduate" ><?php echo $graduates?></a></li>
-                                    <li><a href="people.php#graduated" ><?php echo $graduated?></a></li>
+                                    <li><a href="people#research_staff" ><?php echo $teachers?></a></li>
+                                    <li><a href="people#graduate" ><?php echo $graduates?></a></li>
+                                    <li><a href="people#graduated" ><?php echo $graduated?></a></li>
                                 </ul>
                             </li>
-                            <li><a href="news_list.php" ><?php echo $news?></a></li>
-                            <li><a href="highlights_list.php" ><?php echo $highlights?></a>
+                            <li><a href="news_list" ><?php echo $news?></a></li>
+                            <li><a href="highlights_list" ><?php echo $highlights?></a>
                                 <ul class="sub_menu">
-                                    <li><a href="highlights_detail.php" ><?php echo $latest?></a></li>
-                                    <li><a href="highlights_list.php" ><?php echo $high_list?></a></li>
+                                    <li><a href="highlights_detail" ><?php echo $latest?></a></li>
+                                    <li><a href="highlights_list" ><?php echo $high_list?></a></li>
                                 </ul>
                             </li>
-                            <li><a href="publications_list.php" ><?php echo $pubs?></a></li>
-                            <li><a href="course_list.php" ><?php echo $courses?></a>
+                            <li><a href="publications_list" ><?php echo $pubs?></a></li>
+                            <li><a href="course_list" ><?php echo $courses?></a>
                                 <ul class="sub_menu">
                                     <?php
                                         $sql_acc=mysql_query("select * from tb_user where usernc = '".$_SESSION["unc"]."'");
@@ -54,8 +54,8 @@
                                         if($info_acc!="")
                                         {
                                     ?>
-                                    <li><a href="course_list.php" ><?php echo $course_list?></a></li>
-                                    <li><a href="course_login.php?courseid=<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
+                                    <li><a href="course_list" ><?php echo $course_list?></a></li>
+                                    <li><a href="course_login?courseid=<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
                                     <?php
                                         }
                                         else
@@ -67,8 +67,8 @@
                                     ?>
                                 </ul>
                             </li>
-                            <li><a href="meeting.php" ><?php echo $meeting?></a></li>
-                            <li><a href="contact.php" ><?php echo $contact?></a></li>
+                            <li><a href="meeting" ><?php echo $meeting?></a></li>
+                            <li><a href="contact" ><?php echo $contact?></a></li>
                             <div id="language_change">
                                 <a href="<?php if(empty($_SERVER['QUERY_STRING']))
                                                    echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?lang='.$get_lang;
