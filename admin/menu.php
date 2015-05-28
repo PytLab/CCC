@@ -26,7 +26,7 @@
 <table name="s111" id="s111" width="260" border="0" align="center" cellpadding="0" cellspacing="0" 
 
  <?php
-	if(!($_GET[htgl]=="添加Publication" ||$_GET[htgl]=="删除Publication" )){
+	if(!($_GET[htgl]=="添加Publication" ||$_GET[htgl]=="编辑Publication" )){
 ?>
 			  style="display:none"
 			  <?php
@@ -38,7 +38,7 @@
     <td width="260" height="35" bgcolor="#909090"><div align="left" class="sub_sub"><a href="default.php?htgl=添加Publication">添加Publication</a></div></td>
   </tr>
   <tr> 
-    <td width="260" height="35" bgcolor="#909090"><div align="left" class="sub_sub"><a href="default.php?htgl=删除Publication">删除Publication</a></div></td>
+    <td width="260" height="35" bgcolor="#909090"><div align="left" class="sub_sub"><a href="default.php?htgl=编辑Publication">编辑Publication</a></div></td>
   </tr>
 </table>
 

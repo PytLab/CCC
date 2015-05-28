@@ -9,7 +9,7 @@ case "编辑Highlights":
 case "添加Publication":
   include("addpub.php");
    break;
-case "删除Publication":
+case "编辑Publication":
   include("editpub.php");
    break;
 case "添加people":
