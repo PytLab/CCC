@@ -51,7 +51,7 @@
                         <?php echo $info_staff[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details_<?php echo $info_staff[id];?>">Details -></a>
+                        <a href="people_details_<?php echo $info_staff[id];?>">Details →</a>
                     </div>
                 </div>
                 <?php
@@ -80,7 +80,7 @@
                         <?php echo $info_grad[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details_<?php echo $info_grad[id];?>">Details -></a>
+                        <a href="people_details_<?php echo $info_grad[id];?>">Details →</a>
                     </div>
                 </div>
                 <?php
@@ -110,7 +110,7 @@
                         <?php echo $info_ugrad[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details_<?php echo $info_ugrad[id];?>">Details -></a>
+                        <a href="people_details_<?php echo $info_ugrad[id];?>">Details →</a>
                     </div>
                 </div>
                 <?php
@@ -120,7 +120,7 @@
             </div>
         </div>
         <div id="foot">
-                <?php include_once("footer.php");?>
+            <?php include_once("footer.php");?>
         </div>
     </body>
 </html>

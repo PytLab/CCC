@@ -5,7 +5,7 @@
 
     <body>  
         <div class="nav_box_top"></div>
-        <a href="meeting.php?szj=Introduction"><div class="nav_box" 
+        <a href="meetingIntroduction"><div class="nav_box" 
             <?php
                 if(($_GET[szj]=="Introduction"||$_GET[szj]==""))
                 {
@@ -16,7 +16,7 @@
             ?>
         >Introduction</div></a>
         
-        <a href="meeting.php?szj=Program"><div class="nav_box"
+        <a href="meetingProgram"><div class="nav_box"
             <?php
                 if(($_GET[szj]=="Program"))
                 {
@@ -26,7 +26,7 @@
                 }
             ?>
         >Program</div></a>
-        <a href="meeting.php?szj=Accommodation"><div class="nav_box" 
+        <a href="meetingAccommodation"><div class="nav_box" 
             <?php
                 if(($_GET[szj]=="Accommodation"))
                 {
@@ -36,6 +36,6 @@
                 }
             ?>
         >Accommodation</div></a> 
-        <a href="index.php"><div class="nav_box"><-&nbsp;Homepage</div></a>            
+        <a href="home"><div class="nav_box">←&nbsp;Homepage</div></a>            
     </body>
 </html>
