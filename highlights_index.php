@@ -75,7 +75,7 @@
 				}*/
 			?>
             <p class="more_highlights">
-               <a href="./highlights_detail.php">More Details</a>
+               <a href="highlights_detail">More Details</a>
             </p>
 		</div>
     </div>
