@@ -32,7 +32,7 @@
                             include_once("search_inweb.html");
                         ?>
                     </div>
-                    <div id="logo"><a href="index.php"></a></div>
+                    <div id="logo"><a href="home"></a></div>
                 </div>
                 <div id="head_bottom_meeting">
                	</div>
