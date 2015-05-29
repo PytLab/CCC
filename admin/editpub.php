@@ -105,8 +105,8 @@
             {
         ?>
             
-                <a href="default.php?htgl=删除Publication&page=1" title="首页"><font face="webdings"> 9 </font></a> 
-                <a href="default.php?htgl=删除Publication&page=<?php echo $page-1;?>" title="前一页"><font face="webdings"> 7 </font></a>
+                <a href="default.php?htgl=编辑Publication&page=1" title="首页"><font face="webdings"> 9 </font></a> 
+                <a href="default.php?htgl=编辑Publication&page=<?php echo $page-1;?>" title="前一页"><font face="webdings"> 7 </font></a>
         <?php
             }
             if($pagecount<=4)
@@ -114,7 +114,7 @@
                  for($i=1;$i<=$pagecount;$i++)
                  {
          ?>
-                    <a href="default.php?htgl=删除Publication&page=<?php echo $i;?>"><?php echo $i;?></a>
+                    <a href="default.php?htgl=编辑Publication&page=<?php echo $i;?>"><?php echo $i;?></a>
         <?php
                 }
             }
@@ -123,18 +123,18 @@
                 for($i=1;$i<=4;$i++)
                 {     
         ?>
-                    <a href="default.php?htgl=删除Publication&page=<?php echo $i;?>"><?php echo $i;?></a>
+                    <a href="default.php?htgl=编辑Publication&page=<?php echo $i;?>"><?php echo $i;?></a>
         <?php 
                 }
         ?>
-                    <a href="default.php?htgl=删除Publication&page=<?php 
+                    <a href="default.php?htgl=编辑Publication&page=<?php 
                             if($pagecount>=$page+1)
                                 echo $page+1;
                             else
                                 echo 1; 
                             
                             ?>" title="后一页"><font face="webdings"> 8 </font></a> 
-                        <a href="default.php?htgl=删除Publication&page=<?php echo $pagecount;?>" title="尾页"><font face="webdings"> : </font></a>
+                        <a href="default.php?htgl=编辑Publication&page=<?php echo $pagecount;?>" title="尾页"><font face="webdings"> : </font></a>
         <?php 
                 }
             }
