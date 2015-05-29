@@ -61,8 +61,8 @@
                 if($page>=2)
                 {
             ?>
-            <a href="publications_list_1" title="First"><font face="webdings"> 9 </font></a> 
-            <a href="publications_list_<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
+            <a href="publications1" title="First"><font face="webdings"> 9 </font></a> 
+            <a href="publications<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
             <?php
                 }
                 if($pagecount<=4)
@@ -70,7 +70,7 @@
                     for($i=1;$i<=$pagecount;$i++)
                     {
             ?>
-                <a href="publications_list_<?php echo $i;?>"><?php echo $i;?></a>
+                <a href="publications<?php echo $i;?>"><?php echo $i;?></a>
             <?php
                     }
                 }
@@ -79,18 +79,18 @@
                     for($i=1;$i<=4;$i++)
                     {     
             ?>
-            <a href="publications_list_<?php echo $i;?>"><?php echo $i;?></a>
+            <a href="publications<?php echo $i;?>"><?php echo $i;?></a>
             <?php 
                     }
             ?>
-            ...&nbsp;<a href="publications_list_<?php 
+            ...&nbsp;<a href="publications<?php 
                 if($pagecount>=$page+1)
                     echo $page+1;
                 else
                     echo 1; 
                  
                 ?>" title="Next"> <font face="webdings"> 8 </font></a> 
-                <a href="publications_list_<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
+                <a href="publications<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
             <?php 
                 }
             ?>

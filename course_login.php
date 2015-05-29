@@ -117,7 +117,7 @@
                    </div>
                 </ul>
                 <div id="btn_go">
-                    <a href="coursefile_<?php echo $courseid;?>">
+                    <a href="coursefile<?php echo $courseid;?>">
                         Resources->
                     </a>
                 </div>
