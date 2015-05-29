@@ -62,7 +62,7 @@
             <div class="highlights_info">
                 <div class="highlights_title">
                     <?php
-                        echo "<a href='highlights_look_".$info_list[id]."'>".$info_list[title]."</a>";
+                        echo "<a href='highlightslook".$info_list[id]."'>".$info_list[title]."</a>";
                     ?>
                 </div>
                 <div class="highlights_contnt">
@@ -84,8 +84,8 @@
                 {
             ?>
 
-            <a href="highlights_list_1" title="First"><font face="webdings"> 9 </font></a> 
-            <a href="highlights_list_<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
+            <a href="highlightslist1" title="First"><font face="webdings"> 9 </font></a> 
+            <a href="highlightslist<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
             <?php
                 }
                 if($pagecount<=4)
@@ -93,7 +93,7 @@
                     for($i=1;$i<=$pagecount;$i++)
                     {
             ?>
-            <a href="highlights_list_<?php echo $i;?>"><?php echo $i;?></a>
+            <a href="highlightslist<?php echo $i;?>"><?php echo $i;?></a>
             <?php
                     }
                 }
@@ -102,18 +102,18 @@
                     for($i=1;$i<=4;$i++)
                     {     
             ?>
-            <a href="highlights_list_<?php echo $i;?>"><?php echo $i;?></a>
+            <a href="highlightslist<?php echo $i;?>"><?php echo $i;?></a>
             <?php 
                     }
             ?>
-                ...&nbsp;<a href="highlights_list_<?php 
+                ...&nbsp;<a href="highlightslist<?php 
                 if($pagecount>=$page+1)
                     echo $page+1;
                 else
                     echo 1; 
                  
                 ?>" title="Next"> <font face="webdings"> 8 </font></a> 
-                <a href="highlights_list_<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
+                <a href="highlightslist<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
             <?php 
                 }
             ?>
