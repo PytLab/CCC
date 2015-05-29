@@ -65,9 +65,9 @@
             <a href="publications<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
             <?php
                 }
-                if($pagecount<=4)
+                if($pagecount <= 5)
                 {
-                    for($i=1;$i<=$pagecount;$i++)
+                    for($i = 1; $i <= $pagecount; $i++)
                     {
             ?>
                 <a href="publications<?php echo $i;?>"><?php echo $i;?></a>
@@ -76,7 +76,22 @@
                 }
                 else
                 {
-                    for($i=1;$i<=4;$i++)
+                    if($page >= $pagecount-4)  //最后五页
+                    {
+                        $start = $pagecount-4;
+                        $end = $pagecount;
+                    }
+                    else if($page <= 5)
+                    {
+                        $start = 1;
+                        $end = 5;
+                    }
+                    else
+                    {
+                        $start = $page - 2;
+                        $end = $page + 2;
+                    }
+                    for($i=$start; $i <= $end; $i++)
                     {     
             ?>
             <a href="publications<?php echo $i;?>"><?php echo $i;?></a>

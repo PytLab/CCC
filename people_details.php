@@ -142,7 +142,7 @@
                             <?php
                                 }
                                 /*显示页面切换键*/
-                                if($page_count <= 4)
+                                if($page_count <= 5)
                                 {
                                     for($i = 1; $i <= $page_count; $i++)
                                     {
@@ -153,14 +153,29 @@
                                 }
                                 else
                                 {
-                                    for($i = 1; $i <= 4; $i++) //最多显示4个切换键
+                                    if($page >= $page_count-2)  //最后五页
+                                    {
+                                        $start = $page_count-4;
+                                        $end = $page_count;
+                                    }
+                                    else if($page <= 2)
+                                    {
+                                        $start = 1;
+                                        $end = 5;
+                                    }
+                                    else
+                                    {
+                                        $start = $page - 2;
+                                        $end = $page + 2;
+                                    }
+                                    for($i=$start; $i <= $end; $i++)
                                     {
                             ?>
                                         <a href="people<?php echo $id;?>&<?php echo $i;?>#details_pub"><?php echo $i;?></a>
                             <?php
                                     }
                             ?>
-                            ...&nbsp;<a href="people<?php echo $id;?>&<?php 
+                                <a href="people<?php echo $id;?>&<?php 
                                 if($page_count>=$page+1)
                                     echo $page+1;
                                 else
