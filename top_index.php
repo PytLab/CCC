@@ -41,7 +41,7 @@
                             <li><a href="news" ><?php echo $news?></a></li>
                             <li><a href="highlights" ><?php echo $highlights?></a>
                                 <ul class="sub_menu">
-                                    <li><a href="highlights_detail" ><?php echo $latest?></a></li>
+                                    <li><a href="highlightsdetail" ><?php echo $latest?></a></li>
                                     <li><a href="highlights" ><?php echo $high_list?></a></li>
                                 </ul>
                             </li>
@@ -55,7 +55,7 @@
                                         {
                                     ?>
                                     <li><a href="course" ><?php echo $course_list?></a></li>
-                                    <li><a href="course_login_<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
+                                    <li><a href="courselogin<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
                                     <?php
                                         }
                                         else

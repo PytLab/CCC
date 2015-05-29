@@ -44,14 +44,14 @@
                         {
                 ?>
                 <div class="people_box">
-                    <a href="people_details_<?php echo $info_staff[id];?>">
+                    <a href="people<?php echo $info_staff[id];?>">
                         <img src="<?php echo $info_staff[photo];?>" alt="<?php echo $info_staff[name];?>"/>
                     </a>
                     <div class="box_name">
                         <?php echo $info_staff[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details_<?php echo $info_staff[id];?>">Details →</a>
+                        <a href="people<?php echo $info_staff[id];?>">Details →</a>
                     </div>
                 </div>
                 <?php
@@ -73,14 +73,14 @@
                         {
                 ?>
                 <div class="people_box">
-                    <a href="people_details_<?php echo $info_grad[id];?>">
+                    <a href="people<?php echo $info_grad[id];?>">
                         <img src="<?php echo $info_grad[photo];?>" alt="<?php echo $info_grad[name];?>" />
                     </a>
                     <div class="box_name">
                         <?php echo $info_grad[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details_<?php echo $info_grad[id];?>">Details →</a>
+                        <a href="people<?php echo $info_grad[id];?>">Details →</a>
                     </div>
                 </div>
                 <?php
@@ -103,14 +103,14 @@
                         {
                 ?>
                 <div class="people_box">
-                    <a href="people_details_<?php echo $info_ugrad[id];?>">
+                    <a href="people<?php echo $info_ugrad[id];?>">
                         <img src="<?php echo $info_ugrad[photo];?>" alt="<?php echo $info_ugrad[name];?>" />
                     </a>
                     <div class="box_name">
                         <?php echo $info_ugrad[name];?>
                     </div>
                     <div class="people_details">
-                        <a href="people_details_<?php echo $info_ugrad[id];?>">Details →</a>
+                        <a href="people<?php echo $info_ugrad[id];?>">Details →</a>
                     </div>
                 </div>
                 <?php

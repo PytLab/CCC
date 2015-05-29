@@ -4,28 +4,28 @@ rewriteRule ^home$ index.php
 
 rewriteRule ^people$ people.php
 rewriteRule ^people#([a-zA-Z_]+)$ people.php#$1
-rewriteRule ^people_details_([0-9]+)$ people_details.php?id=$1
-rewriteRule ^people_details_([0-9]+)&([0-9]+)$ people_details.php?id=$1&page=$2
-rewriteRule ^people_details_([0-9]+)&([0-9]+)#([a-zA-Z_]+)$ people_details.php?id=$1&page=$2#$3
+rewriteRule ^people([0-9]+)$ people_details.php?id=$1
+rewriteRule ^people([0-9]+)&([0-9]+)$ people_details.php?id=$1&page=$2
+rewriteRule ^people([0-9]+)&([0-9]+)#([a-zA-Z_]+)$ people_details.php?id=$1&page=$2#$3
 
 rewriteRule ^news$ news_list.php
-rewriteRule ^news_list_([0-9]+)$ news_list.php?page=$1
-rewriteRule ^news_look_([0-9]+)$ news_look.php?id=$1
+rewriteRule ^news([0-9]+)$ news_list.php?page=$1
+rewriteRule ^newsdetails([0-9]+)$ news_look.php?id=$1
 
 rewriteRule ^highlights$ highlights_list.php
-rewriteRule ^highlights_detail$ highlights_detail.php
-rewriteRule ^highlights_list_([0-9]+)$ highlights_list.php?page=$1
-rewriteRule ^highlights_look_([0-9]+)$ highlights_look.php?id=$1
+rewriteRule ^highlightsdetail$ highlights_detail.php
+rewriteRule ^highlightslist([0-9]+)$ highlights_list.php?page=$1
+rewriteRule ^highlightslook([0-9]+)$ highlights_look.php?id=$1
 
 rewriteRule ^publications$ publications_list.php
-rewriteRule ^publications_list_([0-9]+)$ publications_list.php?page=$1
+rewriteRule ^publications([0-9]+)$ publications_list.php?page=$1
 
 rewriteRule ^course$ course_list.php
-rewriteRule ^course_list_([0-9]+)$ course_list.php?page=$1
-rewriteRule ^course_login_([0-9]+)$ course_login.php?courseid=$1
-rewriteRule ^coursefile_([0-9]+)$ coursefile.php?courseid=$1
-rewriteRule ^coursefile_([0-9]+)&([0-9]+)$ coursefile.php?courseid=$1&page=$2
-rewriteRule ^resource_look_([0-9]+)$ resource_look.php?id=$1
+rewriteRule ^courselist([0-9]+)$ course_list.php?page=$1
+rewriteRule ^courselogin([0-9]+)$ course_login.php?courseid=$1
+rewriteRule ^coursefile([0-9]+)$ coursefile.php?courseid=$1
+rewriteRule ^coursefile([0-9]+)&([0-9]+)$ coursefile.php?courseid=$1&page=$2
+rewriteRule ^resource([0-9]+)$ resource_look.php?id=$1
 rewriteRule ^logout$ logout.php
 
 rewriteRule ^meeting$ meeting.php
