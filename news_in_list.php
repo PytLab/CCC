@@ -72,7 +72,7 @@
             <a href="news<?php echo $page-1;?>" title="Previous"><font face="webdings"> 7 </font></a>
             <?php
                 }
-                if($pagecount<=4)
+                if($pagecount<=5)
                 {
                     for($i=1; $i<=$pagecount; $i++)
                     {
@@ -81,23 +81,36 @@
             <?php
                     }
                 }
-                else  //页数多余四页
+                else
                 {
-                    for($i=1;$i<=4;$i++)
+                    if($page >= $pagecount-4)  //最后五页
+                    {
+                        $start = $pagecount-4;
+                        $end = $pagecount;
+                    }
+                    else if($page <= 5)
+                    {
+                        $start = 1;
+                        $end = 5;
+                    }
+                    else
+                    {
+                        $start = $page - 2;
+                        $end = $page + 2;
+                    }
+                    for($i=$start; $i <= $end; $i++)
                     {     
             ?>
             <a href="news<?php echo $i;?>"><?php echo $i;?></a>
             <?php 
                     }
             ?>
-            ...&nbsp;  <!--显示下一页图标-->
             <a href="news<?php 
-                                            if($pagecount>=$page+1)
-                                                echo $page+1;
-                                            else
-                                                echo 1; 
-             
-                                        ?>" title="Next"> <font face="webdings"> 8 </font></a>
+                if($pagecount>=$page+1)
+                    echo $page+1;
+                else
+                    echo 1; 
+                ?>" title="Next"> <font face="webdings"> 8 </font></a>
             <a href="news<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
             <?php 
                 }

@@ -1055,6 +1055,7 @@ margin:0 auto;
     margin-left:10px;
     padding:5px 10px 5px 10px;
     font-weight:bold;
+    color: #4A708B;
 }
 #page_num a:hover{
     -webkit-box-shadow: #999 0px 0px  15px ;

@@ -98,11 +98,11 @@
             <?php 
                     }
             ?>
-            ...&nbsp;<a href="publications<?php 
-                if($pagecount>=$page+1)
-                    echo $page+1;
-                else
-                    echo 1; 
+                <a href="publications<?php 
+                    if($pagecount>=$page+1)
+                        echo $page+1;
+                    else
+                        echo 1; 
                  
                 ?>" title="Next"> <font face="webdings"> 8 </font></a> 
                 <a href="publications<?php echo $pagecount;?>" title="Last"><font face="webdings"> : </font></a>
