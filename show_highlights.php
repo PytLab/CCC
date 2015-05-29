@@ -36,7 +36,7 @@
             ?>
             <p>
                 <li>
-                    <a href="highlights_look_<?php echo $info[id]?>" title="<?php echo $info[title]?>">
+                    <a href="highlightslook<?php echo $info[id]?>" title="<?php echo $info[title]?>">
                         <span class="affices_title">
                             <?php 
                                 echo $info[title]; 
