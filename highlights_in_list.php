@@ -77,7 +77,7 @@
         ?>
         
         <div id="page_num">
-            <a style="font-weight:lighter; hover:None;"><?php echo $page;?>&nbsp;&nbsp;/&nbsp;&nbsp;<?php echo $pagecount;?></a>
+            <a style="font-weight:lighter; hover:None;"><font style="color: #CD5C5C;"><?php echo $page;?></font>&nbsp;&nbsp;/&nbsp;&nbsp;<?php echo $pagecount;?></a>
             &nbsp;&nbsp;|
             <?php
                 if($page>=2)
