@@ -105,11 +105,27 @@
             <div id="details_pub">
                 <div id="pub_ttl"></div>
                 <?php
+                    $origin_date = 0;
                     do
                     {
                 ?> 
+                <?php
+                    /*输出发表年份*/
+                    $pub_date = $info_pub[pub_time];
+                    list($year, $month, $day) = explode('-', $pub_date);
+                    if($year != $origin_date)
+                    {
+                        echo "<br>";
+                        echo "<div style=\"text-align: center; color: #CDC5BF;\">";
+                        echo "--------------------------------------------";
+                        echo " ● Published in ".$year." ● "; 
+                        echo "--------------------------------------------</div>";
+                        $origin_date = $year;
+                        echo "<br>";
+                    }
+                ?>
                 <li>
-                    <?php 
+                    <?php
                         if($info_pub[paper] == "")
                         {
                             echo "<strong>".$info_pub[title]."</strong><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$info_pub[details]."[<a href=\"".$info_pub[link]."\" target=\"_blank\">Link</a>]";    
