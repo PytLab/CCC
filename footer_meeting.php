@@ -7,21 +7,21 @@
 </head>
 
 <html>
-  <body>
-	  <div id="footer_meeting_wrapper" class="clearfix">
-      <div id="footer_meeting">
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="people.php">People</a></li>
-          <li><a href="/features/">News</a></li>
-          <li><a href="/download/">Hightlights</a></li>
-          <li><a href="/pro/">Publications</a></li>
-          <li><a href="/doc/">Courses</a></li>
-          <li><a href="/doc/">Meeting</a></li>
-          <li><a href="/contact/">Contact</a></li>
-        </ul>
-        <p class="copyright">&copy; Copyright <a href="home" target="_blank">Center for Computational Chemistry at ECUST</a>. All rights reserved.</p>
-      </div>
-    </div>
-  </body>
+    <body>
+        <div id="footer_meeting_wrapper" class="clearfix">
+            <div id="footer_meeting">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="people.php">People</a></li>
+                    <li><a href="/features/">News</a></li>
+                    <li><a href="/download/">Hightlights</a></li>
+                    <li><a href="/pro/">Publications</a></li>
+                    <li><a href="/doc/">Courses</a></li>
+                    <li><a href="/doc/">Meeting</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+                <p class="copyright">&copy; Copyright <a href="home" target="_blank">Center for Computational Chemistry at ECUST</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
 </html>
