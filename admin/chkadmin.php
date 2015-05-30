@@ -8,7 +8,7 @@
 	
 	if(strval($xym)!=$_SESSION["autonum1"])
 	{
-		echo strval($xym)." | ".$_SESSION["autonum1"];
+		//echo strval($xym)." | ".$_SESSION["autonum1"];
 		echo "<script>alert('Wrong Vertification Code!');history.go(-1);</script>";
 		exit;
 	}
