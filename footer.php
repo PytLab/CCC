@@ -10,6 +10,6 @@
       <li><a href="/doc/"><?php echo $meeting?></a></li>
       <li><a href="/contact/"><?php echo $contact?></a></li>
     </ul>
-    <p class="copyright">&copy; Copyright <a href="index.php" target="_blank">Center for Computational Chemistry at ECUST</a>. All rights reserved.</p>
+    <p class="copyright">&copy; Copyright <a href="home" target="_blank">Center for Computational Chemistry at ECUST</a>. All rights reserved.</p>
   </div>
 </div>
