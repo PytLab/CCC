@@ -16,11 +16,12 @@
             $total=$info[total];
             if($total==0)
             {
-                echo  "<ul align=\"center\">Oops! No publication found about <strong>'".$searchword."'
+                echo  "<ul align=\"center\", style='color: #AAAAAA'>Oops! No publication found about <strong>'".$searchword."'
                       </strong>&nbsp;&nbsp;&nbsp;&nbsp;_:(´ཀ`」 ∠):_</ul>";
             }
             else
             {
+                echo "<ul align=\"center\", style='color: #AAAAAA'>---------- ● Found&nbsp;".$total."&nbsp;publications ● ----------</ul><br>";
                 if(empty($_GET[page])==true || is_numeric($_GET[page])==false)
                     $page=1;
                 else
