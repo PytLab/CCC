@@ -1,5 +1,4 @@
 <head>
-    <link href="./css/main.css" rel="stylesheet" type="text/css" />
     <style>
         #paper_search{
             background-color: #F0F0F0;
