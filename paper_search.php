@@ -34,24 +34,8 @@
 </head>
 <div id="paper_search">
     <form id="search_id", method="get", action="paper_search_result.php">
-        <input type="text", id="searchword", name="pub_title", value = "&nbsp;Publication Search"/>
-        <input type="image" src="graph/HomePage/search.gif" width="35" height="35" id="go" alt="Search" title="Search"
+        <input type="text", id="searchword", name="pub_title"/>
+        <input type="image" src="graph/HomePage/search.gif" width="35" height="35" id="go" alt="PaperSearch" title="PaperSearch"
                style="-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; " />
     </form>
-    <script language="JavaScript" type="text/javascript">
-            function addListener(element,e,fn)
-            {
-                if(element.addEventListener)
-                    element.addEventListener(e,fn,false);
-                else
-                    element.attachEvent("on" + e,fn);
-            }
-            var myinput = document.getElementById("searchword");
-            addListener(myinput,"click", function(){
-                myinput.value = "";
-            })
-            addListener(myinput,"blur", function(){
-                myinput.value = " Publication Search";
-            })
-        </script>
 </div>
