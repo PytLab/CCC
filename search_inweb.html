@@ -52,30 +52,14 @@
     <body> 
         <div id="search_box"> 
             <form id="search_form" method="get" action="http://www.google.com.hk/search" target="_blank"> 
-                <input type="text" id="keyword" value = "&nbsp;Powered by Google" class="swap_value" style="color:#B0B0B0; background-color:#ffffff" /> 
+                <input type="text" id="keyword" name="q" style="color:#B0B0B0; background-color:#ffffff" /> 
                 <input type="hidden" name="ie" value="UTF-8" />
                 <input type="hidden" name="oe" value="UTF-8" />
                 <input type="hidden" name="hl" value="zh-CN" />
-                <input type="hidden" name="domains" value="www.taobao.com/" />
-                <input type="hidden" name="sitesearch" value="www.taobao.com/" />
+                <input type="hidden" name="domains" value="hyxy.ecust.edu.cn/" />
+                <input type="hidden" name="sitesearch" value="hyxy.ecust.edu.cn/" />
                 <input type="image" src="graph/HomePage/search.gif" width="35" height="30" id="go" alt="Search" title="Search" style="-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; " /> 
             </form> 
         </div>
-        <script language="JavaScript" type="text/javascript">
-            function addListener(element,e,fn)
-            {
-                if(element.addEventListener)
-                    element.addEventListener(e,fn,false);
-                else
-                    element.attachEvent("on" + e,fn);
-            }
-            var myinput = document.getElementById("keyword");
-            addListener(myinput,"click",function(){
-                myinput.value = "";
-            })
-            addListener(myinput,"blur",function(){
-                myinput.value = " Powered by Google";
-            })
-        </script>
     </body> 
 </html>
