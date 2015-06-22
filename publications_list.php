@@ -23,6 +23,7 @@
             <!--左侧-->
             <div id="body_left">
                 <div id="pub_list_title"></div>
+                <?php include_once("paper_search.php");?>
                 <?php include_once("publications_in_list.php");?>
             </div>
             <!--右侧-->
