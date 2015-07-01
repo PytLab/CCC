@@ -43,7 +43,7 @@
                 {
                     echo $info[paper];    
                 }
-                    ?>" title="<?php echo $info[title]?>">
+                    ?>" title="<?php echo $info[title]?>" target="_blank">
             <li>
                 <span class="affices_title">
                     <?php 
