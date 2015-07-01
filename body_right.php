@@ -23,7 +23,7 @@
         <h3><?php echo $contact?></h3>
         <p class="text"></p>
         <p class="more">
-            <a href="#"><?php echo $more_contact?></a>
+            <a href="contact"><?php echo $more_contact?></a>
         </p>
     </div> 
 </div>
