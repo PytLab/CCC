@@ -1,5 +1,5 @@
 <?php
-	include_once("top_index.php");
+    include_once("top_index.php");
 ?>
 <head>
     <title><?php echo $high_ttl;?></title>
@@ -20,16 +20,16 @@
 <html>        
     <body>
         <div id="body">
-			<!--左侧-->
-        	<div id="body_left">
-            	<div id="highlights_list_title"></div>
-            	<?php include_once("highlights_in_list.php");?>
+            <!--左侧-->
+            <div id="body_left">
+                <div id="highlights_list_title"></div>
+                <?php include_once("highlights_in_list.php");?>
             </div>
             <!--右侧-->
             <?php include_once("body_right.php");?>
         </div>
         <div id="foot">
-        	<?php include_once("footer.php");?>
+            <?php include_once("footer.php");?>
         </div>
     </body>
 </html>
