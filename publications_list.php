@@ -28,9 +28,9 @@
             </div>
             <!--右侧-->
             <?php include_once("body_right.php");?>
-            <div id="foot">
-                <?php include_once("footer.php");?>
-            </div>
+        </div>
+        <div id="foot">
+            <?php include_once("footer.php");?>
         </div>
     </body>
 </html>
