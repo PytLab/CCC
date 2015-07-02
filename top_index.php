@@ -46,7 +46,7 @@
                                 </ul>
                             </li>
                             <li><a href="publications" ><?php echo $pubs?></a></li>
-                            <li><a href="course" ><?php echo $courses?></a>
+                            <li><a href="courses" ><?php echo $courses?></a>
                                 <ul class="sub_menu">
                                     <?php
                                         $sql_acc=mysql_query("select * from tb_user where usernc = '".$_SESSION["unc"]."'");

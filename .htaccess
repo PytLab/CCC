@@ -20,7 +20,7 @@ rewriteRule ^highlightslook([0-9]+)$ highlights_look.php?id=$1
 rewriteRule ^publications$ publications_list.php
 rewriteRule ^publications([0-9]+)$ publications_list.php?page=$1
 
-rewriteRule ^course$ course_list.php
+rewriteRule ^courses$ course_list.php
 rewriteRule ^courselist([0-9]+)$ course_list.php?page=$1
 rewriteRule ^courselogin([0-9]+)$ course_login.php?courseid=$1
 rewriteRule ^coursefile([0-9]+)$ coursefile.php?courseid=$1
