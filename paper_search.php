@@ -33,7 +33,7 @@
 </head>
 <div id="paper_search">
     <form id="search_id", method="get", action="paper_search_result.php">
-        <input type="text", id="searchword", name="pub_title"/>
+        <input type="text" id="searchword" name="pub_title" onfocus="this.value=''" value=" Paper Search"/>
         <input type="image" src="graph/HomePage/search.gif" 
                width="35" height="35" id="go" alt="PaperSearch" title="PaperSearch"
                style="-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; " />
