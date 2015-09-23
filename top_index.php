@@ -54,7 +54,7 @@
                                         if($info_acc!="")
                                         {
                                     ?>
-                                    <li><a href="course" ><?php echo $course_list?></a></li>
+                                    <li><a href="courses" ><?php echo $course_list?></a></li>
                                     <li><a href="courselogin<?php echo $info_acc[courseid];?>" ><?php echo $course_acc?></a></li>   
                                     <?php
                                         }
